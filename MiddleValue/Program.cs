@@ -31,8 +31,7 @@ namespace Beam.Example.MiddleValue
             Console.Write(" Enter third number ...: ");
             num3 = Convert.ToDouble(Console.ReadLine());
 
-
-            // Logic to find the middle number.
+            // logic to find the middle value.
             if ((num2 < num1 && num1 < num3) || (num3 < num1 && num1 < num2))
             {
                 middleNum = num1;
