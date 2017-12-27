@@ -17,7 +17,7 @@ namespace Beam.Example.GradeDetermination
             double score2;
             double score3;
             double aveScore;
-            string aveGrade = "";
+            string letterGrade = "";
 
             // user input - No Input Validation
             Console.WriteLine();
@@ -38,29 +38,29 @@ namespace Beam.Example.GradeDetermination
             // logic to determine letter grade based on aveScore
             if (aveScore >= 90)
             {
-                aveGrade = "A";
+                letterGrade = "A";
             }
             else if ((aveScore >= 80) && (aveScore < 90))
             {
-                aveGrade = "B";
+                letterGrade = "B";
             }
             else if ((aveScore >= 70) && (aveScore < 80))
             {
-                aveGrade = "C";
+                letterGrade = "C";
             }
             else if ((aveScore >= 60) && (aveScore < 70))
             {
-                aveGrade = "D";
+                letterGrade = "D";
             }
             else
             {
-                aveGrade = "F";
+                letterGrade = "F";
             }
 
             // print results
             Console.WriteLine();
             Console.WriteLine(" Score Average .......: {0:#,#.000}", aveScore);
-            Console.WriteLine(" Letter Grade ........: {0}\n", aveGrade);
+            Console.WriteLine(" Letter Grade ........: {0}\n", letterGrade);
             Console.Write(" Press Any Key to Exit...");
             Console.ReadKey();
 
