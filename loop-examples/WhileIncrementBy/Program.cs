@@ -2,7 +2,7 @@
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2017 GPLv3
  *  Level .......: Basic
- *  Description..: While loop that increments by x and is between two values
+ *  Description..: While loop that increments by x
  */
 using System;
 
