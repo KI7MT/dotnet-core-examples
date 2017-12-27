@@ -48,4 +48,4 @@ namespace Beam.Example.CorrectChange
 
     } // END - class Program
 
-} // END - namespace com.beam.example.CorrectChange
+} // END - namespace Beam.CorrectChange

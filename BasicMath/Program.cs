@@ -12,6 +12,7 @@ namespace Beam.Example.BasicMath
     {
         static void Main(string[] args)
         {
+            // method variables
             double firstNum;
             double secondNum;
             double sOut;
@@ -20,6 +21,7 @@ namespace Beam.Example.BasicMath
             double pOut;
             double aOut;
 
+            // user input - No Input Validation
             Console.WriteLine();
             Console.Write(" Enter First Number ...: ");
             firstNum = Convert.ToDouble(Console.ReadLine());
@@ -27,12 +29,14 @@ namespace Beam.Example.BasicMath
             Console.Write(" Enter Second Number ..: ");
             secondNum = Convert.ToDouble(Console.ReadLine());
 
+            // calculations
             sOut = (firstNum + secondNum);
             dOut = Math.Abs(firstNum - secondNum);
             qOut = firstNum / secondNum;
             pOut = firstNum * secondNum;
             aOut = (firstNum + secondNum) / 2;
 
+            // print results
             Console.WriteLine();
             Console.WriteLine(" Sum ..................: {0}", sOut);
             Console.WriteLine(" Difference ...........: {0}", dOut);
@@ -42,6 +46,9 @@ namespace Beam.Example.BasicMath
             Console.WriteLine();
             Console.Write(" Press Any Key To Exit...");
             Console.ReadKey();
-        }
-    }
-}
+
+        } // END - Main Method
+
+    } // END - class Program
+
+} // END - namespace Beam.Example.BasicMath
