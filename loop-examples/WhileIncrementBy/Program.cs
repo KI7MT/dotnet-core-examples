@@ -2,31 +2,29 @@
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2017 GPLv3
  *  Level .......: Basic
- *  Description..: While loop that calculates powers of 10  for x < <= 10
+ *  Description..: While loop that increments by x and is between two values
  */
 using System;
 
-namespace Beam.Example.WhilePower
+namespace Beam.Example.WhileIncrementBy
 {
     class Program
     {
         static void Main(string[] args)
         {
             // method variables
-            int x = 1;
-            double power10;
+            int count = 47;
 
             // print header
             Console.WriteLine();
-            Console.WriteLine(" Values for ( 10 ^ x ) where ( x =< 10 )");
+            Console.WriteLine(" Values for ( 47 thu 78 ) incremented by ( 4 )");
             Console.WriteLine();
 
             // start loop
-            while (x <= 10)
+            while (count < 78)
             {
-               power10 = Math.Pow(10, x);
-               Console.WriteLine(" 10 to the power of {0} is {1}", x, power10.ToString("#,##0"));
-               x++;
+                Console.WriteLine(" Number is now {0} ", count);
+                count = count + 4;
             }
 
             // print footer
@@ -34,8 +32,9 @@ namespace Beam.Example.WhilePower
             Console.WriteLine(" Press Any Key to Exit...");
             Console.ReadKey();
 
+
         } // END - Main Method
 
     } // END - class Program
 
-} // END - namespace Beam.Example.WhilePower
+} // END - namespace Beam.Example.WhileIncrementBy
