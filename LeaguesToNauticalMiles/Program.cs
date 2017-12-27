@@ -6,7 +6,7 @@
  */
 using System;
 
-namespace LeaguesToNauticalMiles
+namespace Beam.Example.LeaguesToNauticalMiles
 {
     class Program
     {

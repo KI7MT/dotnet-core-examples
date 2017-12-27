@@ -6,7 +6,7 @@
  */
 using System;
 
-namespace BasicMath
+namespace Beam.Example.BasicMath
 {
     class Program
     {

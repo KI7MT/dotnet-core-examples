@@ -6,7 +6,7 @@
  */
 using System;
 
-namespace NetPayCalculator
+namespace Beam.Example.NetPayCalculator
 {
     class Program
     {

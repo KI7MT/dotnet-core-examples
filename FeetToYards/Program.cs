@@ -6,7 +6,7 @@
  */
 using System;
 
-namespace FeetToYards
+namespace Beam.Example.FeetToYards
 {
     class Program
     {
