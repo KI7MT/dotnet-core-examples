@@ -3,7 +3,7 @@
  *  Copyright ...: Copyright (C) 2017 GPLv3
  *  Level .......: Basic
  *  Description..: Determine the suffix, as spoken, for a given integer with
- *                 minimal validation.
+ *                 minimal validation. Valid for integers 1 thru 10
  */
 using System;
 

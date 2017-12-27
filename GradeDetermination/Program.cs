@@ -32,7 +32,7 @@ namespace Beam.Example.GradeDetermination
             Console.Write(" Enter Third Score ...: ");
             score3 = Convert.ToDouble(Console.ReadLine());
 
-            // calulation
+            // calculation
             aveScore = (score1 + score2 + score3) / 3;
 
             // logic to determine letter grade based on aveScore
