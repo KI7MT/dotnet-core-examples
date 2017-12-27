@@ -6,7 +6,7 @@
  */
 using System;
 
-namespace SmallestOfFive
+namespace Beam.Example.SmallestOfFive
 {
     class Program
     {
