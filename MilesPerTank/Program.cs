@@ -12,7 +12,35 @@ namespace Beam.Example.MilesPerTank
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // method variables
+            double tankSize;
+            double milesTravelled;
+            double gallonsLeft;
+            double mpgOut;
+            double milesPerTank;
+
+            // user input - No Input Validation
+            Console.WriteLine();
+            Console.Write(" Enter Tank Size ........: ");
+            tankSize = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write(" Enter Miles Travelled ..: ");
+            milesTravelled = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write(" Enter Gallons Left .....: ");
+            gallonsLeft = Convert.ToDouble(Console.ReadLine());
+
+            // calculations
+            mpgOut = milesTravelled / (tankSize - gallonsLeft);
+            milesPerTank = mpgOut * tankSize;
+
+            // print results
+            Console.WriteLine();
+            Console.WriteLine(" Miles per Full Tank ....: {0}", milesPerTank);
+            Console.WriteLine();
+            Console.Write(" Press Any Key To Exit...");
+            Console.ReadKey();
+
         } // END - Main Method
 
     } // END - class Program
