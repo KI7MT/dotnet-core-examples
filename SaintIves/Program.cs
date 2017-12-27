@@ -17,7 +17,7 @@ namespace Beam.Example.SaintIves
     {
         static void Main(string[] args)
         {
-            // riddle variables
+            // riddle variables / calculations
             int nMan = 1;
             int nWives = 7;
             int nSacks = nWives * 7;
@@ -41,4 +41,4 @@ namespace Beam.Example.SaintIves
 
     } // END - class Program
 
-} // END - namespace SaintIves
+} // END - namespace Beam.Example.SaintIves
