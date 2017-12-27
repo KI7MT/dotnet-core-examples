@@ -12,6 +12,7 @@ namespace Beam.Example.FeetToYards
     {
         static void Main(string[] args)
         {
+            // method variables
             double conversionFactor = 0.111111111;
             double squareFeetIn;
             double squareYardOut;
@@ -19,9 +20,11 @@ namespace Beam.Example.FeetToYards
             Console.WriteLine();
             Console.Write(" Enter Square Feet ..: ");
             squareFeetIn = Convert.ToDouble(Console.ReadLine());
+
+            // calculation
             squareYardOut = squareFeetIn * conversionFactor;
 
-            // print the data
+            // print results
             Console.Write(" Square yards .......: {0}\n", squareYardOut);
             Console.WriteLine();
             Console.Write(" Press Any Key to Exit...");
@@ -31,4 +34,4 @@ namespace Beam.Example.FeetToYards
     
     } // END - class Program
 
-} // END - namespace FeetToYards
+} // END - namespace Beam.Example.FeetToYards
