@@ -2,6 +2,7 @@
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2017 GPLv3
  *  Level .......: Basic
+ *  Target ......: netcoreapp2.0 FeetToYards.dll
  *  Description..: User Input feet => convert feet to yards
  */
 using System;

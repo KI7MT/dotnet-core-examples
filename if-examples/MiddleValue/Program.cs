@@ -2,6 +2,7 @@
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2017 GPLv3
  *  Level .......: Basic
+ *  Target ......: netcoreapp2.0 MiddleValue.dll
  *  Description..: Determine the middle value of three integers
  */
 using System;

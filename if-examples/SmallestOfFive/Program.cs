@@ -2,6 +2,7 @@
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2017 GPLv3
  *  Level .......: Basic
+ *  Target ......: netcoreapp2.0 SmallestOfFive.dll
  *  Description..: Determine the smallest of five numbers
  */
 using System;
@@ -39,7 +40,7 @@ namespace Beam.Example.SmallestOfFive
             Console.Write(" Enter fifth number ...: ");
             num5 = Convert.ToDouble(Console.ReadLine());
 
-            // logic to determien smallest number
+            // logic to determine smallest number
             if (num1 <= num2 && num1 <= num3 && num1 <= num4 && num1 <= num5) // num1 is smallest
             {
                smallestNum = num1;
