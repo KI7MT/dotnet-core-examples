@@ -12,7 +12,7 @@ namespace Beam.Example.NetPayCalculator
     {
         static void Main(string[] args)
         {
-            // setup variables
+            // method variables
             double hoursWorked;
             double hourlyRate;
             double fedTax;
@@ -56,4 +56,4 @@ namespace Beam.Example.NetPayCalculator
 
     } // END - class Program
 
-} // END - namespace NetPayCalculator
+} // END - namespace Beam.Example.NetPayCalculator
