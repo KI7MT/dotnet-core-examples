@@ -1,7 +1,7 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2017 GPLv3
- *  Level .......: Basic
+ *  Level .......: Intermediate
  *  Target ......: netcoreapp2.0 InchesToCentimeters.dll
  *  Description..: Uses a method outside of Main to perform a calculation
  */
@@ -54,6 +54,7 @@ namespace Beam.Example.InchesToCentimeters
 
         static double ConvertInchesToCentimeters(double valueInches, double convFactor)
         {
+            // Formula: Centimeters = Inches * 2.54
             return valueInches * convFactor;
         }
 
