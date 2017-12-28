@@ -46,7 +46,7 @@ namespace Beam.Example.InchesToCentimeters
             Console.Write(" Press Any Key to Exit ... ");
             Console.ReadKey();
 
-        } // END - Main Method 
+        }
 
         #endregion
 
@@ -55,7 +55,7 @@ namespace Beam.Example.InchesToCentimeters
         static double convertInchesToCentimeters(double valueInches, double convFactor)
         {
             return valueInches * convFactor;
-        } // END - Convert Inches to Centimeters
+        }
 
         #endregion
 
