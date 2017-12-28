@@ -35,8 +35,10 @@ namespace Beam.Example.InchesToCentimeters
             Console.Write(" Input Inches ........: ");
             inputInches = Convert.ToDouble(Console.ReadLine());
 
-            // call the method to perform conversion and print results
+            // call the method to perform conversion
             returnCentimeters = convertInchesToCentimeters(inputInches, inputConversion);
+         
+            // print results
             Console.WriteLine(" Output Centimeters ..: {0}", returnCentimeters);
 
             // print footer
