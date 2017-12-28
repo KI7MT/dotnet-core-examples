@@ -36,7 +36,7 @@ namespace Beam.Example.InchesToCentimeters
             inputInches = Convert.ToDouble(Console.ReadLine());
 
             // call the method to perform conversion
-            returnCentimeters = convertInchesToCentimeters(inputInches, inputConversion);
+            returnCentimeters = ConvertInchesToCentimeters(inputInches, inputConversion);
          
             // print results
             Console.WriteLine(" Output Centimeters ..: {0}", returnCentimeters);
@@ -52,7 +52,7 @@ namespace Beam.Example.InchesToCentimeters
 
         #region Convert Inches to Centimeters
 
-        static double convertInchesToCentimeters(double valueInches, double convFactor)
+        static double ConvertInchesToCentimeters(double valueInches, double convFactor)
         {
             return valueInches * convFactor;
         }
