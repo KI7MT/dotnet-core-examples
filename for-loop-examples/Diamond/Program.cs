@@ -4,6 +4,16 @@
  *  Level .......: Basic
  *  Target ......: netcoreapp2.0 Diamond.dll
  *  Description..: For Loop Diamond
+ *
+ *  Note: this approach uses (3) For Loops as opposed to (6). The IF statement
+ *        controls counter direction (mCount) "as seen by" the two inner loops
+ *        (sCount and oCount), in affect, reversing inner loop action after
+ *        mCount reaches 10.
+ *
+ *  - mCount is the master (outer loop) counter ( 1 to 19 )
+ *  - sCount is the space counter ( decrements when mCount <= 10 and increments when mCount > 10 )
+ *  - oCount is the "o" counter ( increments when mCount <= 10 and decrements when mCount > 10 )
+ *
  */
 using System;
 
@@ -13,19 +23,6 @@ namespace Beam.Example.Diamond
     {
         static void Main(string[] args)
         {
-            /* 
-             * Note: this approach uses (3) For Loops as opposed to (6). The
-             *       IF statement controls counter direction (mCount) 
-             *       "as seen by" the two inner loops (sCount and oCount), in
-             *       affect, reversing inner loop action after mCount
-             *       reaches 10.
-             *
-             *  - mCount is the master (outer loop) counter ( 1 to 19 )
-             *  - sCount is the space counter ( decrements when mCount <= 10 and increments when mCount > 10 )
-             *  - oCount is the "o" counter ( increments when mCount <= 10 and decrements when mCount > 10 )
-             *
-             */
-
             // method variables
             int controlCount = 0;   // sets the variable for the IF statement
             int maxCount = 20;      // sets the maximum count value for dealing with the bottom triangle
