@@ -14,7 +14,7 @@ namespace Beam.Example.SimpleArray
     {
         static void Main(string[] args)
         {
-            // method variables
+            // initialize the array with 10 elements
             double[] listValue = new double[10];
 
             // print header
