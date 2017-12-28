@@ -54,7 +54,7 @@ namespace Beam.Example.Diamond
                 }
                 // end inner loop for "o's"
 
-                // pring line spacing
+                // print line spacing
                 Console.WriteLine();
             }
             // end outer loop
