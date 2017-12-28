@@ -7,7 +7,7 @@
  */
 using System;
 
-namespace WhileAverageNumbers
+namespace Beam.Example.WhileAverageNumbers
 {
     class Program
     {
