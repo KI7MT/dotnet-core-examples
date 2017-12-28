@@ -2,12 +2,12 @@
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2017 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 WhileLargestNumber.dll
+ *  Target ......: netcoreapp2.0 LargestNumber.dll
  *  Description..: While loop entry, print largest number
  */
 using System;
 
-namespace Beam.Example.WhileLargestNumber
+namespace Beam.Example.LargestNumber
 {
     class Program
     {
@@ -51,4 +51,4 @@ namespace Beam.Example.WhileLargestNumber
 
     } // END - class Program
 
-} // END - namespace Beam.Example.WhileLargestNumber
+} // END - namespace Beam.Example.LargestNumber

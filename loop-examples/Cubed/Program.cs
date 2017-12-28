@@ -2,12 +2,12 @@
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2017 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 WhilePower.dll
- *  Description..: While loop that calculates powers of 10  for x < <= 10
+ *  Target ......: netcoreapp2.0 Cubed.dll
+ *  Description..: While loop to calculate cubed values
  */
 using System;
 
-namespace Beam.Example.WhilePower
+namespace Beam.Example.Cubed
 {
     class Program
     {
@@ -15,19 +15,19 @@ namespace Beam.Example.WhilePower
         {
             // method variables
             int x = 1;
-            double power10;
+            double cubed;
 
             // print header
             Console.WriteLine();
-            Console.WriteLine(" Values for ( 10 ^ x ) where ( x =< 10 )");
+            Console.WriteLine(" Values for 1 thru 10 cubed");
             Console.WriteLine();
 
             // start loop
             while (x <= 10)
             {
-               power10 = Math.Pow(10, x);
-               Console.WriteLine(" 10 to the power of {0} is {1}", x, power10.ToString("#,##0"));
-               x++;
+                cubed = Math.Pow(x, 3);
+                Console.WriteLine(" {0} cubed is {1}", x, cubed);
+                x++;
             }
 
             // print footer
@@ -39,4 +39,5 @@ namespace Beam.Example.WhilePower
 
     } // END - class Program
 
-} // END - namespace Beam.Example.WhilePower
+} // END - namespace Beam.Example.Cubed
+

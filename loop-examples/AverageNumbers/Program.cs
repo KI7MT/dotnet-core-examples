@@ -2,12 +2,12 @@
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2017 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 WhileAverageNumbers.dll
+ *  Target ......: netcoreapp2.0 AverageNumbers.dll
  *  Description..: Average a series of Even and Odd numbers
  */
 using System;
 
-namespace Beam.Example.WhileAverageNumbers
+namespace Beam.Example.AverageNumbers
 {
     class Program
     {
@@ -85,4 +85,4 @@ namespace Beam.Example.WhileAverageNumbers
 
     } // END - class Program
 
-} // END - namespace Beam.Example.WhileAverageNumbers
+} // END - namespace Beam.Example.AverageNumbers

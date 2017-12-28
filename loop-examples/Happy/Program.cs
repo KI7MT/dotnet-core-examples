@@ -2,12 +2,12 @@
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2017 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 WhileHappy.dll
+ *  Target ......: netcoreapp2.0 Happy.dll
  *  Description..: While (true) loop
  */
 using System;
 
-namespace Beam.Example.WhileHappy
+namespace Beam.Example.Happy
 {
     class Program
     {
@@ -52,4 +52,4 @@ namespace Beam.Example.WhileHappy
 
     } // END - class Program
 
-} // END - namespace Beam.Example.WhileHappy
+} // END - namespace Beam.Example.Happy

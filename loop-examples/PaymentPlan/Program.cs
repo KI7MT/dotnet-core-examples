@@ -2,12 +2,12 @@
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2017 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 WhilePaymentPlan.dll
+ *  Target ......: netcoreapp2.0 PaymentPlan.dll
  *  Description..: While loop payment plan comparison, no user input
  */
 using System;
 
-namespace Beam.Example.WhilePaymentPlan
+namespace Beam.Example.PaymentPlan
 {
     class Program
     {
@@ -56,4 +56,4 @@ namespace Beam.Example.WhilePaymentPlan
 
     } // END - class Program
 
-} // END - namespace Beam.Example.WhilePaymentPlan
+} // END - namespace Beam.Example.PaymentPlan

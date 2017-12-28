@@ -2,30 +2,32 @@
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2017 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 WhileIncrementBy.dll
- *  Description..: While loop that increments by x
+ *  Target ......: netcoreapp2.0 PowerOf.dll
+ *  Description..: While loop that calculates powers of 10  for x < <= 10
  */
 using System;
 
-namespace Beam.Example.WhileIncrementBy
+namespace Beam.Example.PowerOf
 {
     class Program
     {
         static void Main(string[] args)
         {
             // method variables
-            int count = 47;
+            int x = 1;
+            double power10;
 
             // print header
             Console.WriteLine();
-            Console.WriteLine(" Values for ( 47 thu 78 ) incremented by ( 4 )");
+            Console.WriteLine(" Values for ( 10 ^ x ) where ( x =< 10 )");
             Console.WriteLine();
 
             // start loop
-            while (count < 78)
+            while (x <= 10)
             {
-                Console.WriteLine(" Number is now {0} ", count);
-                count = count + 4;
+               power10 = Math.Pow(10, x);
+               Console.WriteLine(" 10 to the power of {0} is {1}", x, power10.ToString("#,##0"));
+               x++;
             }
 
             // print footer
@@ -33,9 +35,8 @@ namespace Beam.Example.WhileIncrementBy
             Console.WriteLine(" Press Any Key to Exit...");
             Console.ReadKey();
 
-
         } // END - Main Method
 
     } // END - class Program
 
-} // END - namespace Beam.Example.WhileIncrementBy
+} // END - namespace Beam.Example.PowerOf
