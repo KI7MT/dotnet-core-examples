@@ -37,8 +37,9 @@ namespace Beam.Example.RightTriangle
                Console.WriteLine(); // line spacing
             
             }
-            // End Outer loop -----
+            // end outer loop
 
+            // print footer
             Console.WriteLine();
             Console.Write("Press Any Key to Exit... ");
             Console.ReadKey();
