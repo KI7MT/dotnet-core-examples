@@ -7,7 +7,7 @@
  */
 using System;
 
-namespace Diamond
+namespace Beam.Example.Diamond
 {
     class Program
     {
