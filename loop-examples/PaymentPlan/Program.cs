@@ -32,13 +32,11 @@ namespace Beam.Example.PaymentPlan
                 {
                     plan1Cash = (plan1Rate * 1);
                     plan2Cash = (plan2Rate * 1);
-
                 }
                 else // day 1++ increases by $100.00 per day for Plan1, and Plan2 doubles each day starting at $2.00
                 {
                     plan1Cash = (plan1Rate * counter);
                     plan2Cash = Math.Pow(plan2Rate, counter);
-
                 }
 
                 // print results
