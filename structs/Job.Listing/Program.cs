@@ -3,7 +3,8 @@
  *  Copyright ...: Copyright (C) 2017 GPLv3
  *  Level .......: Basic
  *  Target ......: netcoreapp2.0 Job.Listing.dll
- *  Description..: Use Two Struct to generate job postings
+ *  Description..: 1). Use Two Struct to generate job postings
+ *                 2). Uses Random to generate Job ID's
  */
 using System;
 
