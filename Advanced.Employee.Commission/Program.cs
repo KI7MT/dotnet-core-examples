@@ -75,7 +75,7 @@ namespace Beam.Example.Advanced.Employee.Commission
             // Method: print header
             printHeader();
 
-            // set number of personnel to process
+            // set number of personnel to process (array of struct)
             Console.Write(" Number of personnel ....: ");
             numPersonnel = Convert.ToInt16(Console.ReadLine());
             employeeRecord[] allRecords = new employeeRecord[numPersonnel];
@@ -202,11 +202,11 @@ namespace Beam.Example.Advanced.Employee.Commission
             // print header - grand totals for all employee's
             totalPayroll = totalCommission + totalHourlyWages;
             Console.WriteLine();
-            Console.WriteLine("--------------------------------------------------");
+            Console.WriteLine("****************************************");
             Console.WriteLine(" Total Commission .......: {0:c}", totalCommission);
             Console.WriteLine(" Total Hourly Wages  ....: {0:c}", totalHourlyWages);
             Console.WriteLine(" Total Gross Pay ........: {0:c}", totalPayroll);
-            Console.WriteLine("--------------------------------------------------");
+            Console.WriteLine("****************************************");
 
             // start loop - employee summary
             foreach (employeeRecord thisRecord in allRecords)
