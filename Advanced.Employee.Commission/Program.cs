@@ -72,8 +72,8 @@ namespace Beam.Example.Advanced.Employee.Commission
             double totalHourlyWages = 0;
             double totalPayroll = 0;
 
-            // print header
-            printHeader(); // Method
+            // Method: print header
+            printHeader();
 
             // set number of personnel to process
             Console.Write(" Number of personnel ....: ");
@@ -199,7 +199,7 @@ namespace Beam.Example.Advanced.Employee.Commission
             }
             // end - employee main loop
 
-            // print header - grand totals to all employee's
+            // print header - grand totals for all employee's
             totalPayroll = totalCommission + totalHourlyWages;
             Console.WriteLine();
             Console.WriteLine("--------------------------------------------------");
@@ -226,16 +226,16 @@ namespace Beam.Example.Advanced.Employee.Commission
                 }
                 else
                 {
-                    // print employee summary message
+                    // print employee summary messages
                     Console.WriteLine(" Total Wage .............: {0:c}", thisRecord.empWage);
                     Console.WriteLine(" Commission .............: {0:c}", thisRecord.empComAmount);
                     Console.WriteLine(" Gross Pay...............: {0:c}", thisRecord.empGrossPay);
                 }
             }
-            // end - employee summary
+            // end loop - employee summary
 
-            // print footer
-            printFooter(); // Method
+            // Method: print footer
+            printFooter();
 
         }
 
@@ -259,7 +259,6 @@ namespace Beam.Example.Advanced.Employee.Commission
         }
 
         #endregion
-
 
         #region Main Footer
 
