@@ -2,7 +2,7 @@
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2017 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 AreaOfCylinder.dll
+ *  Target ......: netcoreapp2.0 VolumeOfCylinder.dll
  *  Description..: Uses a method outside of Main to perform a calculation
  */
 using System;
@@ -21,17 +21,17 @@ namespace Beam.Example.VolumeOfCylinder
             // clear screen
             Console.Clear();
 
-            // method vaariables
+            // method variables
             double inputDiameter;
             double inputHeight;
             double returnArea;
 
             // print header
-            Console.WriteLine("--------------------------------------------------");
+            Console.WriteLine("------------------------------------------------");
             Console.WriteLine(" Calculate the Volume of a Cylinder");
             Console.WriteLine("  1. Enter Cylinder Diameter");
             Console.WriteLine("  2. Enter Cylinder Height");
-            Console.WriteLine("--------------------------------------------------");
+            Console.WriteLine("------------------------------------------------");
             Console.WriteLine();
 
             // user input - diameter
