@@ -24,9 +24,12 @@ The code for each application is Verbose, meaning, shortcuts and advanced
 concatenations have been kept to a minimum to allow for easier readability.
 Code comments are also brief, but should suffice for most readers.
 
-The majority of the programs are a single file (Programs.cs types), easy to use,
+The majority of the programs are a single file (Program.cs), easy to use,
 and can be compiled on any operating system capable of running the 
-[.Net Core SDK](http://dotnet.github.io/getting-started/).
+[.Net Core SDK](http://dotnet.github.io/getting-started/). Unless otherwise
+indicated, no references nor application class libraries are used. As and when
+more advanced topics are added, this will obviously need to change change and be
+reflected as such in the documentation.
 
 ## How to Run Examples
 
