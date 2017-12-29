@@ -20,7 +20,7 @@ needs I've run across. While the problem source may differ, I wrote all of the s
 * [ASP.NET Core MVC](https://github.com/aspnet/Mvc)
 
 ## Required Tools
-All of the applications were written, and tested, using [VS Code](https://code.visualstudio.com/). However, virtually any quality text editor paired with with Windows CMD shell / Powershell will be more than adequate to
+All of the applications were written, and tested, using [VS Code](https://code.visualstudio.com/). However, virtually any quality text editor paired with Windows CMD shell / Powershell / Unix Shell will be more than adequate to
 run the examples.
 
 ## Cross Platform Testing
