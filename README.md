@@ -17,6 +17,11 @@ allows, more advanced topics will be added; employment of packages such as:
 All of the applications were written, and tested, using [VS Code](https://code.visualstudio.com/). However, virtually any quality text editor paired with with Windows CMD shell / Powershell will be more than adequate to
 run the examples.
 
+## Cross Platform Testing
+All the example applications were tested on Window-10 Native Version 1709 Build
+16299.125 or later, [Windows Subsystem Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/about), and Linux Native 
+([Ubuntu Desktop 16.04 LTS)](https://www.ubuntu.com/download/desktop) installations.
+
 ## Classification
 
 Each application can be described as follows (from a new developer standpoint):
