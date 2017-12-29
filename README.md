@@ -1,6 +1,6 @@
 # .NET Core Examples
 
-Basic, Intermediate, and Advanced Single File .NET Core Application Examples
+**Basic, Intermediate, and Advanced Single File .NET Core Application Examples**
 
 This directory contains examples that you can use to test out [.NET Core](http://dotnet.github.io).
 Each section contains one or more applications. Each application can be described
@@ -18,7 +18,7 @@ The majority of the programs are a Single File. They are simple to use, and
 can be compiled on any Operating System capable of running the 
 [.Net Core SDK](http://dotnet.github.io/getting-started/).
 
-## Running The Examples
+## How to Run Examples
 
 In order to run the examples, you must [install .NET Core](http://dotnet.github.io/getting-started/).
 After that, you can clone the repository, navigate to the example folders and:
@@ -27,7 +27,7 @@ After that, you can clone the repository, navigate to the example folders and:
 	* `dotnet restore`
 	* `dotnet run`
 
-## Samples list
+## Example List
 
 * **Advanced.Employee.Commission** - Calculates one ore more Employees commission,
 saves to an array of structures, then prints a summary.
