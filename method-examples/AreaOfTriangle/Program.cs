@@ -1,7 +1,7 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2017 GPLv3
- *  Level .......: Intermediate
+ *  Level .......: Basic
  *  Target ......: netcoreapp2.0 AreaOfTriangle.dll
  *  Description..: Uses a method outside of Main to perform a calculation
  */
@@ -16,7 +16,7 @@ namespace Beam.Example.AreaOfTriangle
         static void Main(string[] args)
         {
             // console title
-            Console.Title = "Area of Triangle";
+            Console.Title = "Calculate Area of Triangle";
 
             // clear screen
             Console.Clear();
@@ -54,7 +54,7 @@ namespace Beam.Example.AreaOfTriangle
 
         #endregion
 
-        #region Area of Triangle
+        #region Method: Area of Triangle
         
         static double CalcTriangleArea(double valueBase, double valueHeight)
         {

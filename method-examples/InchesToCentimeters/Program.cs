@@ -1,7 +1,7 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2017 GPLv3
- *  Level .......: Intermediate
+ *  Level .......: Basic
  *  Target ......: netcoreapp2.0 InchesToCentimeters.dll
  *  Description..: Uses a method outside of Main to perform a calculation
  */
@@ -50,7 +50,7 @@ namespace Beam.Example.InchesToCentimeters
 
         #endregion
 
-        #region Convert Inches to Centimeters
+        #region Method: Convert Inches to Centimeters
 
         static double ConvertInchesToCentimeters(double valueInches, double convFactor)
         {
