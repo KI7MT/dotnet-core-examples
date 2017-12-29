@@ -2,7 +2,7 @@
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2017 GPLv3
  *  Level .......: Intermediate
- *  Target ......: netcoreapp2.0 InchesToCentimeters.dll
+ *  Target ......: netcoreapp2.0 AreaOfTriangle.dll
  *  Description..: Uses a method outside of Main to perform a calculation
  */
 using System;
