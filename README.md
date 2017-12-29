@@ -30,7 +30,9 @@ All the example applications were tested on Window-10 Native Version 1709 Build
 
 ## Classification
 
-Each application can be described as follows (from a new developer standpoint):
+Each section (folder) has a simplistic classification (from a new developer standpoint). Professional and experienced  [OOP Developers](https://en.wikipedia.org/wiki/Object-oriented_programming) should consider the examples intro-level. New Developers, or those switching over to 
+[OOP Development](https://en.wikipedia.org/wiki/Object-oriented_programming) could
+think of them in terms of:
 
 * **Introductory** - basic applications that any entry level programmer can grasp.
 * **Intermediate** - employs things such as structures, and methods from outside
