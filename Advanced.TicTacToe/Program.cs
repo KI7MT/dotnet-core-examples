@@ -4,8 +4,8 @@
  *  Level .......: Advanced
  *  Target ......: netcoreapp2.0 Advanced.TicTacToe.dll
  *  Description..: Simple Command Line Tic-Tac-Toe Game
- *                 Uses: 2D Arrays, If, If-Else, for-loop
- *                       foreach-loop, methods, and colors
+ *                 Uses: 2D Arrays, If, If-Else, While-Loops
+ *                       methods, and colors
  */
 using System;
 using System.Linq;
@@ -143,19 +143,19 @@ namespace Beam.Example.Advanced.TicTacToe
                     {
                         playerName = p1Name;
                     }
-                    // method
+                    // method - winner message
                     WinnerMessage(playerName);
                     gameStatus = true;
 
-                }// END - Entry Section
+                }// end - entry section
 
-            }// END - While Loop
+            }// end - while loop
             
             // print footer
             Console.Write("\n    Press any key to exit...");
             Console.ReadKey();
 
-        } // END - Main Method
+        } // end - main method
 
         // ---------------------------------------------------------------------
         // BEGIN: METHODS
@@ -176,7 +176,7 @@ namespace Beam.Example.Advanced.TicTacToe
             Console.ResetColor();
         }
 
-        // main board array
+        // method - main board array
         private static string[,] pArray = new string[3, 3];
 
         // acceptable input array of values for  (x, y) coordinates
@@ -201,7 +201,7 @@ namespace Beam.Example.Advanced.TicTacToe
             string pos8 = pArray[2, 2] = " ";
         }
 
-        // method - main board
+        // method - draw main board
         static void MainBoard()
         {
             Console.WriteLine();
@@ -221,7 +221,7 @@ namespace Beam.Example.Advanced.TicTacToe
             Console.WriteLine("    +------+------+------+");
         }
 
-        // method - check for "winner winner turkey dinner"
+        // method - check for "winner winner chicken dinner"
         static bool CheckGameWinner()
         {
             // top row, left to right
