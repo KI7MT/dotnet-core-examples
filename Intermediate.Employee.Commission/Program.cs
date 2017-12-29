@@ -2,9 +2,9 @@
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2017 GPLv3
  *  Level .......: Intermediate
- *  Target ......: netcoreapp2.0 MLS.Listing.dll
+ *  Target ......: netcoreapp2.0 Intermediate.Employee.Commission.dll
  *  Description..: Calculate commission for one or more employee's
- *                 Uses only If, If-Else, and For loops
+ *                 Only use If, If-Else, and For loops
  */
 using System;
 
