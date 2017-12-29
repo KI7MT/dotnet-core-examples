@@ -5,13 +5,17 @@
 This repository contains examples that you can use to test out [.NET Core](http://dotnet.github.io) with.
 Each section contains one or more applications. All of the examples were either
 labs, book problems, or common application needs. While the problem source
-may differ, I wrote all of the solutions as presents in the repository. As time
+may differ, I wrote all of the solutions as presented in the repository. As time
 allows, more advanced topics will be added; employment of packages such as:
 
 * [Entity Framework Core](https://github.com/aspnet/EntityFrameworkCore)
 * [Service Stack Redis](https://github.com/ServiceStack/ServiceStack.Redis)
 * [Neo4J Driver](https://github.com/neo4j/neo4j-dotnet-driver)
 * [Marten and PostgreSQL](https://www.nuget.org/packages/Marten/2.3.0)
+
+## Required Tools
+All of the applications were written, and tested, using [VS Code](https://code.visualstudio.com/). However, virtually any quality text editor paired with with Windows CMD shell / Powershell will be more than adequate to
+run the examples.
 
 ## Classification
 
