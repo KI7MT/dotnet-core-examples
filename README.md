@@ -6,7 +6,7 @@ This repository contains examples that you can use to test out [.NET Core](http:
 Each section (folder) contains one or more applications that should run on any
 number of operating systems. The repository serves two primary purposes:
 
-1. A code-snippet store my reference
+1. A code-snippet store for my reference
 2. Code examples for aspiring [dotnet-core](https://github.com/dotnet/core)
 developers that want something more than just "Hello World" to play with.
 
