@@ -3,8 +3,8 @@
 **Basic, Intermediate, and Advanced .NET Core Application Examples**
 
 This repository contains examples that you can use to test out [.NET Core](http://dotnet.github.io) with.
-Each section contains one or more applications. All of the examples were either
-labs, book problems, or common application needs. While the problem source
+Each section contains one or more applications. All of the examples are either
+labs, dev-book problems, or common application needs. While the problem source
 may differ, I wrote all of the solutions as presented in the repository. As time
 allows, more advanced topics will be added; employment of packages such as:
 
@@ -40,7 +40,7 @@ Code comments are also brief, but should suffice for most readers.
 
 The majority of the programs are a single file (Program.cs), easy to use,
 and can be compiled on any operating system capable of running the 
-[.Net Core SDK](https://www.microsoft.com/net/learn/get-started/windows). Unless otherwise indicated, no references nor application class libraries are used. As and when more advanced topics are added, this will obviously need to change change and be reflected as such in the documentation.
+[.Net Core SDK](https://www.microsoft.com/net/learn/get-started/windows). Unless otherwise indicated, no reference nor application class libraries are used. As and when more advanced topics are added, this will obviously need to change and be reflected as such in the documentation.
 
 ## How to Run Examples
 
