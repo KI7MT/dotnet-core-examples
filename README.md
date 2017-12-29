@@ -3,15 +3,21 @@
 **Basic, Intermediate, and Advanced .NET Core Application Examples**
 
 This repository contains examples that you can use to test out [.NET Core](http://dotnet.github.io) with.
-Each section contains one or more applications. All of the examples are either
-labs, dev-book problems, or common application needs. While the problem source
-may differ, I wrote all of the solutions as presented in the repository. As time
-allows, more advanced topics will be added; employment of packages such as:
+Each section (folder) contains one or more applications that should be and run on any number of operating systems. The repository serves two primary purposes:
+
+1. A code-snippet store my reference
+2. Code examples for aspiring [dotnet-core](https://github.com/dotnet/core)
+developers that want something more than just "Hello World" to play with.
+
+All of the examples are either labs, dev-book problems, or common application
+needs I've run across. While the problem source may differ, I wrote all of the solutions as presented in the repository. As time allows, more advanced topics will be added; employment of packages such as:
 
 * [Entity Framework Core](https://github.com/aspnet/EntityFrameworkCore)
 * [Service Stack Redis](https://github.com/ServiceStack/ServiceStack.Redis)
 * [Neo4J Driver](https://github.com/neo4j/neo4j-dotnet-driver)
 * [Marten and PostgreSQL](https://www.nuget.org/packages/Marten/2.3.0)
+* [ASP.NET Core MVC](https://github.com/aspnet/Mvc)
+* 
 
 ## Required Tools
 All of the applications were written, and tested, using [VS Code](https://code.visualstudio.com/). However, virtually any quality text editor paired with with Windows CMD shell / Powershell will be more than adequate to
