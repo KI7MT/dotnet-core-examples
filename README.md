@@ -16,7 +16,7 @@ techniques.
 
 The majority of the programs are a Single File. They are simple to use, and 
 can be compiled on any Operating System capable of running the 
-[.Net Core SDK]([install .NET Core](http://dotnet.github.io/getting-started/).
+[.Net Core SDK](http://dotnet.github.io/getting-started/).
 
 ## How to run the samples?
 
