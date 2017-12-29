@@ -67,5 +67,5 @@ structs.
 * **Intro.for-loops** - various implementations of using for-loops to
 draw shapes, perform countdowns, and determine values.
 * **Intro.if-else** - several entry level if-else statement examples.
-* **Inteo.while-loops** - simple high-low game, account balance, payment plan, and calculators.
+* **Intro.while-loops** - simple high-low game, account balance, payment plan, and calculators.
 
