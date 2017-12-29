@@ -8,7 +8,7 @@
  */
 using System;
 
-namespace Intermediate.Employee.Commission
+namespace Beam.Example.Intermediate.Employee.Commission
 {
     class Program
     {
@@ -151,4 +151,4 @@ namespace Intermediate.Employee.Commission
 
     } // END - class Program
 
-} // END - namespace Intermediate.Employee.Commission
+} // END - namespace Beam.Example.Intermediate.Employee.Commission
