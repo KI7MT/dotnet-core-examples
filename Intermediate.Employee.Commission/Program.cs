@@ -14,6 +14,12 @@ namespace Intermediate.Employee.Commission
     {
         static void Main(string[] args)
         {
+            // console title
+            Console.Title = "Intermediate Employee Commission Calculator";
+
+            // clear screen
+            Console.Clear();
+
             // method variables
             int numPersonnel = 0;
 
