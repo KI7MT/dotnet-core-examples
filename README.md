@@ -14,8 +14,12 @@ Intermediate. They may also use instance classes, interfaces, extend classes,
 or more advanced [Object Oriented Programming (OOP)](https://en.wikipedia.org/wiki/Object-oriented_programming)
 techniques.
 
-The majority of the programs are a Single File. They are simple to use, and 
-can be compiled on any Operating System capable of running the 
+The code for each application is Verbose, meaning, shortcuts and advanced
+concatenations have been kept to a minimum to allow for easier readability.
+Code comments are also brief, but should suffice for most readers.
+
+The majority of the programs are a single file (Programs.cs types), easy to use,
+and can be compiled on any operating system capable of running the 
 [.Net Core SDK](http://dotnet.github.io/getting-started/).
 
 ## How to Run Examples
