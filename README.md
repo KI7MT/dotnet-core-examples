@@ -2,9 +2,15 @@
 
 **Basic, Intermediate, and Advanced Single File .NET Core Application Examples**
 
-This directory contains examples that you can use to test out [.NET Core](http://dotnet.github.io).
-Each section contains one or more applications. Each application can be described
-as follows:
+This directory contains examples that you can use to test out [.NET Core](http://dotnet.github.io) with.
+Each section contains one or more applications. As time allows, more advanced topics will be added; employment of packages such as:
+
+* [Entity Framework Core](https://github.com/aspnet/EntityFrameworkCore)
+* [Service Stack Redis](https://github.com/ServiceStack/ServiceStack.Redis)
+* [Neo4J Driver](https://github.com/neo4j/neo4j-dotnet-driver)
+* [Marten and PostgreSQL](https://www.nuget.org/packages/Marten/2.3.0)
+
+Each application can be described as follows:
 
 * **Introductory** - basic applications that any entry level programmer can grasp.
 * **Intermediate** - employs things such as structures, and methods from outside
