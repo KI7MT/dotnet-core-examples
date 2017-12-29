@@ -88,7 +88,7 @@ namespace Beam.Example.Job.Listing
             Console.WriteLine("----------------------------------------------------------");
             Console.WriteLine();
 
-            // Loop through and print each job posting from jobList
+            // foreach loop through and print each job posting from jobList
             foreach (Jobs thisJob in jobList)
             {
                 Console.WriteLine(" JOB-ID: {0}", thisJob.jobID);
@@ -104,7 +104,7 @@ namespace Beam.Example.Job.Listing
                 Console.WriteLine();
             }
 
-            // Print the footer
+            // print footer
             Console.WriteLine();
             Console.Write(" Press Any Key to Exit ... ");
             Console.ReadKey();
