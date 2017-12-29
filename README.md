@@ -31,14 +31,11 @@ Code comments are also brief, but should suffice for most readers.
 
 The majority of the programs are a single file (Program.cs), easy to use,
 and can be compiled on any operating system capable of running the 
-[.Net Core SDK](http://dotnet.github.io/getting-started/). Unless otherwise
-indicated, no references nor application class libraries are used. As and when
-more advanced topics are added, this will obviously need to change change and be
-reflected as such in the documentation.
+[.Net Core SDK](https://www.microsoft.com/net/learn/get-started/windows). Unless otherwise indicated, no references nor application class libraries are used. As and when more advanced topics are added, this will obviously need to change change and be reflected as such in the documentation.
 
 ## How to Run Examples
 
-In order to run the examples, you must [install .NET Core](http://dotnet.github.io/getting-started/).
+In order to run the examples, you must [install .NET Core](https://www.microsoft.com/net/learn/get-started/windows).
 After that, you can clone the repository, navigate to the example folders and:
 
 * Build / Run by issuing the following commands
