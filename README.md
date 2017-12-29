@@ -18,17 +18,30 @@ The majority of the programs are a Single File. They are simple to use, and
 can be compiled on any Operating System capable of running the 
 [.Net Core SDK](http://dotnet.github.io/getting-started/).
 
-## How to run the samples?
+## Running The Examples
 
-In order to run these examples, you must [install .NET Core](http://dotnet.github.io/getting-started/).
+In order to run the examples, you must [install .NET Core](http://dotnet.github.io/getting-started/).
 After that, you can clone the repository, navigate to the example folders and:
 
-* Build and Run by issuing the following commands
+* Build / Run by issuing the following commands
 	* `dotnet restore`
 	* `dotnet run`
 
 ## Samples list
 
-* **dotnetbot** - Let dotnetbot say Hi!
-* **helloworld** - because no sample is complete without Hello World!
-* **qotd** - a simple "quote of the day" console application (**note**: this sample is not yet capable of being compiled to a native binary).
+* **Advanced.Employee.Commission** - Calculates one ore more Employees commission,
+saves to an array of structures, then prints a summary.
+* **Advanced.TicTacToe** - Console game Tic-Tac-Toe that uses more advanced
+features such as 2D arrays, and external methods.
+* **Intermediate.Employee.Commission** - Similar to advanced, but only uses If,
+If-Else and for-loops for construction.
+* **Intermediate.methods** - several simple calculators
+that use methods external to the main method for computation.
+* **Intermediate.structs** - simple MLS and Job listings applications that use
+structs.
+* **Intro.arrays** - examples of using arrays to perform calculations.
+* **Intro.for-loops** - various implementations of using for-loops to
+draw shapes, perform countdowns, and determine values.
+* **Intro.if-else** - several entry level if-else statement examples.
+* **Inteo.while-loops** - simple high-low game, account balance, payment plan, and calculators.
+
