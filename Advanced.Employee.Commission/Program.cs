@@ -1,7 +1,7 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2017 GPLv3
- *  Level .......: Intermediate
+ *  Level .......: Advanced
  *  Target ......: netcoreapp2.0 Advanced.Employee.Commission.dll
  *  Description..: Calculate commission for one or more employee's
  *                 Uses: Struct, Array of Struct, If, If-Else, for-loop
