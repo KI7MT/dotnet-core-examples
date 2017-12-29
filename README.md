@@ -18,7 +18,6 @@ needs I've run across. While the problem source may differ, I wrote all of the s
 * [Neo4J Driver](https://github.com/neo4j/neo4j-dotnet-driver)
 * [Marten and PostgreSQL](https://www.nuget.org/packages/Marten/2.3.0)
 * [ASP.NET Core MVC](https://github.com/aspnet/Mvc)
-* 
 
 ## Required Tools
 All of the applications were written, and tested, using [VS Code](https://code.visualstudio.com/). However, virtually any quality text editor paired with with Windows CMD shell / Powershell will be more than adequate to
