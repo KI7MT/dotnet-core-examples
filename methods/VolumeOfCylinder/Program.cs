@@ -56,6 +56,7 @@ namespace Beam.Example.VolumeOfCylinder
         #endregion
 
         #region Method: Volume of a Cylinder
+        
         static double CalcCylinderVolume(double valueDiameter, double valueHeight, double valuePI = Math.PI)
         {
             // Formula: Volume = π * (Radius Squared) * h
