@@ -63,17 +63,25 @@ After that, you can clone the repository, navigate to the example folders and:
 
 * [Advanced.Employee.Commission](https://github.com/KI7MT/dotnet-core-examples/tree/master/Advanced.Employee.Commission) - Calculates one ore more Employees commission,
 saves to an array of structures, then prints a summary.
+
 * [Advanced.TicTacToe](https://github.com/KI7MT/dotnet-core-examples/tree/master/Advanced.TicTacToe) - Console game Tic-Tac-Toe that uses more advanced
 features such as 2D arrays, and external methods.
+
 * [Intermediate.Employee.Commission](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate.Employee.Commission) - Similar to advanced, but only uses If,
 If-Else and for-loops for construction.
+
 * [Intermediate.methods](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate.methods) - several simple calculators
 that use methods external to the main method for computation.
+
 * [Intermediate.structs](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate.structs) - simple MLS and Job listings applications that use
 structs.
+
 * [Intro.arrays](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intro.arrays) - examples of using arrays to perform calculations.
+
 * [Intro.for-loops](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intro.for-loops) - various implementations of using for-loops to
 draw shapes, perform countdowns, and determine values.
+
 * [Intro.if-else](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intro.if-else) - several entry level if-else statement examples.
+
 * [Intro.while-loops](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intro.while-loops) - simple high-low game, account balance, payment plan, and calculators.
 
