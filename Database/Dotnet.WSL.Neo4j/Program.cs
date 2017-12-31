@@ -152,4 +152,4 @@ namespace Beam.Example.Dotnet.WSL.Neo4j
 
     # endregion 
 
-} // END - namespace 
+} // END - namespace Beam.Example.Dotnet.WSL.Neo4j
