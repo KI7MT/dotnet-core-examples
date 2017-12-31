@@ -35,12 +35,18 @@ Each section (folder) has a simplistic classification (from a new developer stan
 think of them in terms of:
 
 * [Introductory](https://github.com/KI7MT/dotnet-core-examples/tree/master/Introductory) - basic applications that any entry level programmer can grasp.
+
 * [Intermediate](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate) - employs things such as structures, and methods from outside
 of the main method.
+
 * [Advanced](https://github.com/KI7MT/dotnet-core-examples/tree/master/Advanced) - are applications that use a combination of both Introduction and
 Intermediate. They may also use instance classes, interfaces, extend classes, 
 or more advanced [Object Oriented Programming (OOP)](https://en.wikipedia.org/wiki/Object-oriented_programming)
 techniques.
+
+* [Database]() - This section holds examples relating to various database
+server. As to their classification, based on the definitions above, the examples
+fall into Advanced.
 
 The code for each application is Verbose, meaning, shortcuts and advanced
 concatenations have been kept to a minimum to allow for easier readability.
