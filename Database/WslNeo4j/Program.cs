@@ -36,7 +36,7 @@ namespace Beam.Example.WslNeo4j
 
             #endregion
 
-            #region First Query <Movie, Year, TagLine
+            #region First Query <Movie, Year, TagLine>
 
             // Get the movies
             var movies = client.Cypher
@@ -54,7 +54,7 @@ namespace Beam.Example.WslNeo4j
 
             // print header
             Console.WriteLine();
-            Console.WriteLine("Movie Query (Limit = 4)");
+            Console.WriteLine("List Movies (Limit = 4)");
             Console.WriteLine("-----------------------");
             foreach (var movie in movies)
             {
@@ -79,7 +79,7 @@ namespace Beam.Example.WslNeo4j
             Console.WriteLine("-------------------------");
             foreach (var person in persons)
             {
-                // Write the restuls
+                // Write the results
                 Console.WriteLine(
                     $"{person.Name.PadRight(20)} " +
                     $"{Convert.ToString(person.Born)}"
@@ -138,7 +138,8 @@ namespace Beam.Example.WslNeo4j
 
     #endregion
 
-    #region class Move
+    #region class Movie
+    
     public class Movie
     {
         [JsonProperty(PropertyName = "title")]
