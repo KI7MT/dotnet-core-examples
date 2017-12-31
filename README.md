@@ -47,7 +47,7 @@ or more advanced [Object Oriented Programming (OOP)](https://en.wikipedia.org/wi
 techniques.
 
 * [Database](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database) - This section holds examples relating to various database
-server. As to their classification, based on the definitions above, the examples
+servers. As to their classification, based on the definitions above, the examples
 fall into Advanced.
 
 The code for each application is Verbose, meaning, shortcuts and advanced
