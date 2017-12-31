@@ -19,7 +19,7 @@ needs I've run across. While the problem source may differ, I wrote all of the s
 | [Service.Stack.Redis](https://github.com/ServiceStack/ServiceStack.Redis)   |  Redis    | Pending |
 | [Neo4J.Driver](https://github.com/neo4j/neo4j-dotnet-driver)                |  Neo4j    | Working |
 | [Marten & PSQL](https://www.nuget.org/packages/Marten/2.3.0)                |PostgreSQL |Pending  |
-| [ASP.NET Core MVC](https://github.com/aspnet/Mvc)                           | T-SQL     | Pending |
+| [EntityFrameworkCore.Sqlite](https://docs.microsoft.com/en-us/ef/core/providers/sqlite/)                 | SQLite     | Pending |
 
 ## Required Tools
 All of the applications were written, and tested, using [VS Code](https://code.visualstudio.com/). However, virtually any quality text editor paired with Windows CMD shell / Powershell / Unix Shell will be more than adequate to
