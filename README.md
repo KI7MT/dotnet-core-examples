@@ -14,7 +14,7 @@ All of the examples are either labs, dev-book problems, or common application
 needs I've run across. While the problem source may differ, I wrote all of the solutions as presented in the repository. As time allows, more advanced topics will be added; employment of packages such as:
 
 | Library     |    Database    |    Status    |
-| :---:       |    :---:       |    :---:     |
+| :---       |    :---:       |    :---:     |
 | [Entity.Framework](https://github.com/aspnet/EntityFrameworkCore)           |  T-SQL    | Pending |
 | [Service.Stack.Redis](https://github.com/ServiceStack/ServiceStack.Redis)   |  Redis    | Pending |
 | [Neo4J.Driver](https://github.com/neo4j/neo4j-dotnet-driver)                |  Neo4j    | Working |
