@@ -1,6 +1,6 @@
 # .NET Core Examples
 
-**Basic, Intermediate, and Advanced .NET Core Application Examples**
+**Introductory, Intermediate, and Advanced .NET Core Application Examples**
 
 This repository contains examples that you can use to test out [.NET Core](http://dotnet.github.io) with.
 Each section (folder) contains one or more applications that should run on any
@@ -34,10 +34,10 @@ Each section (folder) has a simplistic classification (from a new developer stan
 [OOP Development](https://en.wikipedia.org/wiki/Object-oriented_programming) could
 think of them in terms of:
 
-* Introductory - basic applications that any entry level programmer can grasp.
-* **Intermediate** - employs things such as structures, and methods from outside
+* [Introductory](https://github.com/KI7MT/dotnet-core-examples/tree/master/Introductory) - basic applications that any entry level programmer can grasp.
+* [Intermediate](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate) - employs things such as structures, and methods from outside
 of the main method.
-* **Advanced** - are applications that use a combination of both Introduction and
+* [Advanced](https://github.com/KI7MT/dotnet-core-examples/tree/master/Advanced) - are applications that use a combination of both Introduction and
 Intermediate. They may also use instance classes, interfaces, extend classes, 
 or more advanced [Object Oriented Programming (OOP)](https://en.wikipedia.org/wiki/Object-oriented_programming)
 techniques.
@@ -61,30 +61,30 @@ After that, you can clone the repository, navigate to the example folders and:
 
 ## Intro Example List
 
-* [arrays](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intro.arrays) - examples of using arrays to perform calculations.
+* [arrays](https://github.com/KI7MT/dotnet-core-examples/tree/master/Introductory/arrays) - examples of using arrays to perform calculations.
 
-* [for-loops](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intro.for-loops) - various implementations of using for-loops to
+* [for-loops](https://github.com/KI7MT/dotnet-core-examples/tree/master/Introductory/for-loops) - various implementations of using for-loops to
 draw shapes, perform countdowns, and determine values.
 
-* [if-else](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intro.if-else) - several entry level if-else statement examples.
+* [if-else](https://github.com/KI7MT/dotnet-core-examples/tree/master/Introductory/if-else) - several entry level if-else statement examples.
 
-* [while-loops](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intro.while-loops) - simple high-low game, account balance, payment plan, and calculators.
+* [while-loops](https://github.com/KI7MT/dotnet-core-examples/tree/master/Introductory/while-loops) - simple high-low game, account balance, payment plan, and calculators.
 
 ## Intermediate Example List
 
-* [Intermediate.Employee.Commission](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate.Employee.Commission) - Similar to advanced, but only uses If,
+* [Employee.Commission.V1](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate/Employee.Commission.V1) - Similar to advanced, but only uses If,
 If-Else and for-loops for construction.
 
-* [methods](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate.methods) - several simple calculators
+* [methods](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate/methods) - several simple calculators
 that use methods external to the main method for computation.
 
-* [structs](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate.structs) - simple MLS and Job listings applications that use
+* [structs](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate/structs) - simple MLS and Job listings applications that use
 structs.
 
 ## Advanced Example List
 
-* [Advanced.Employee.Commission](https://github.com/KI7MT/dotnet-core-examples/tree/master/Advanced.Employee.Commission) - Calculates one ore more Employees commission,
+* [Advanced.Employee.Commission](https://github.com/KI7MT/dotnet-core-examples/tree/master/Advanced/Employee.Commission.V2) - Calculates one ore more Employees commission,
 saves to an array of structures, then prints a summary.
 
-* [TicTacToe](https://github.com/KI7MT/dotnet-core-examples/tree/master/Advanced.TicTacToe) - Console game Tic-Tac-Toe that uses more advanced
+* [TicTacToe](https://github.com/KI7MT/dotnet-core-examples/tree/master/Advanced/TicTacToe) - Console game Tic-Tac-Toe that uses more advanced
 features such as 2D arrays, and external methods.
