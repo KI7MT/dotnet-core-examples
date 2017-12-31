@@ -4,9 +4,10 @@
  *  Level .......: Advanced
  *  Target ......: netcoreapp2.0 Advanced.Employee.Commission.dll
  *  Description..: Movie query using WSL and Neo4j
- *                 Requires: Neo4j Client package
- *                           Neo4j Driver package
- *                           Newtonsoft Json package
+ *  Requires ....: Neo4j Client package
+ *                 Neo4j Driver package
+ *                 Newtonsoft Json package
+ *                 Neo4j Movie Data
  *
  *  Note: Check dbuser and db dbpasswd matches the database being connected to.
  *
