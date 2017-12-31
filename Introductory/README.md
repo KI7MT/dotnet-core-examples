@@ -1,7 +1,5 @@
 ## Introductory .NET Core Examples
 
-**Introductory, Intermediate, and Advanced .NET Core Application Examples**
-
 ### How to Run Examples
 
 In order to run the examples, you must [install .NET Core](https://www.microsoft.com/net/learn/get-started/windows).

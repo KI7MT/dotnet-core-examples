@@ -1,6 +1,4 @@
-## Intermediate Example List
-
-**Intermediate .NET Core Application Examples**
+## Intermediate .NET Core Examples
 
 ### How to Run Examples
 

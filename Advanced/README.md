@@ -1,6 +1,4 @@
-## Advanced Examples List
-
-**Advanced .NET Core Application Examples**
+## Advanced .NET Core Examples
 
 ## How to Run Examples
 
