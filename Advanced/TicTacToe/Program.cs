@@ -2,7 +2,7 @@
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2017 GPLv3
  *  Level .......: Advanced
- *  Target ......: netcoreapp2.0 Advanced.TicTacToe.dll
+ *  Target ......: netcoreapp2.0 TicTacToe.dll
  *  Description..: Simple Command Line Tic-Tac-Toe Game
  *                 Uses: 2D Arrays, If, If-Else, While-Loops
  *                       methods, and colors
