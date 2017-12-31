@@ -1,4 +1,17 @@
-﻿using System;
+﻿/* 
+ *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
+ *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Level .......: Advanced
+ *  Target ......: netcoreapp2.0 Advanced.Employee.Commission.dll
+ *  Description..: Movie query using WSL and Neo4j
+ *                 Requires: Neo4j Client package
+ *                           Neo4j Driver package
+ *                           Newtonsoft Json package
+ *
+ *  Note: Check dbuser and db dbpasswd matches the database being connected to.
+ *
+ */
+using System;
 using Neo4jClient;
 using Neo4j.Driver.V1;
 using Newtonsoft.Json;
