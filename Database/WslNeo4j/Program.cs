@@ -17,7 +17,7 @@ using Neo4jClient;
 using Neo4j.Driver.V1;
 using Newtonsoft.Json;
 
-namespace Beam.Example.Dotnet.WSL.Neo4j
+namespace Beam.Example.WslNeo4j
 {
     #region Main Method
 
@@ -153,4 +153,4 @@ namespace Beam.Example.Dotnet.WSL.Neo4j
 
     # endregion 
 
-} // END - namespace Beam.Example.Dotnet.WSL.Neo4j
+} // END - namespace Beam.Example.WslNeo4j
