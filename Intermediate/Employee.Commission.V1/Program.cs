@@ -8,7 +8,7 @@
  */
 using System;
 
-namespace Beam.Example.Intermediate.Employee.Commission
+namespace Beam.Example.Employee.Commission.V1
 {
     class Program
     {
