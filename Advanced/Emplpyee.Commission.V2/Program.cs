@@ -9,7 +9,7 @@
  */
 using System;
 
-namespace Beam.Example.Advanced.Employee.Commission
+namespace Beam.Example.Employee.Commission.V2
 {
     class Program
     {
