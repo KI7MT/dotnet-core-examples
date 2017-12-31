@@ -44,7 +44,7 @@ Intermediate. They may also use instance classes, interfaces, extend classes,
 or more advanced [Object Oriented Programming (OOP)](https://en.wikipedia.org/wiki/Object-oriented_programming)
 techniques.
 
-* [Database]() - This section holds examples relating to various database
+* [Database](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database) - This section holds examples relating to various database
 server. As to their classification, based on the definitions above, the examples
 fall into Advanced.
 
