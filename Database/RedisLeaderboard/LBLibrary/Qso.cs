@@ -1,0 +1,6 @@
+﻿namespace LBLibrary
+{
+    class Qso
+    {
+    }
+}

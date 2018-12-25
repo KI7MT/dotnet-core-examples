@@ -27,7 +27,7 @@ namespace Beam.Example.WslNeo4j
         {
             // edit these to match your Neo4j Database User and Password
             string dbuser = "neo4j";
-            string dbpasswd = "neo4j";
+            string dbpasswd = "neo4jj";
 
             #region Database Connection via Neo4jClient
 
@@ -94,9 +94,9 @@ namespace Beam.Example.WslNeo4j
             using (var driver = GraphDatabase.Driver("bolt://localhost", AuthTokens.Basic(dbuser, dbpasswd)))
             using (var session = driver.Session())
             {
-                var result1 = session.Run("MATCH (a:Person)-[:PRODUCED]->(m:Movie) WHERE a.name = 'Joel Silver' RETURN m");
+                var result1 = session.Run("MATCH (a:Person)-[:PRODUCED]->(m:Movie) WHERE a.name = 'Tom Hanks' RETURN m");
 
-                Console.WriteLine("\nProducer (Joel Silver)");
+                Console.WriteLine("\nProducer (Tom Hanks)");
                 Console.WriteLine("-------------------------");
                 foreach (var node in result1)
                 {
