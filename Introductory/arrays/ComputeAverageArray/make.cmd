@@ -1,6 +1,6 @@
 ::-----------------------------------------------------------------------------::
 :: Name .........: make.cmd
-:: Project ......: dotnet-core-examples : RedisLeaderboard
+:: Project ......: dotnet-core-examples : ComputeAverageArray
 :: Description ..: Make file to manage RandGen Globally
 :: Project URL ..: https://github.com/ki7mt/dotnet-core-examples
 ::
@@ -24,9 +24,8 @@
 @ECHO OFF
 
 :: Applicaiton Name
-set app_name=RedisLeaderboard
+set app_name=ComputeAverageArray
 set app_ver=1.0.0
-set applist=LBLibrary LBService LBClient
 
 :: Get Command line Options %1
 IF /I [%1]==[clean] ( GOTO _CLEAN )
@@ -40,57 +39,46 @@ GOTO HELP
 :_CLEAN
 CLS
 ECHO ----------------------------------------
-ECHO  Clean Solution %app_name% v%app_ver%
+ECHO  Clean Solution %app_name%
 ECHO ----------------------------------------
 ECHO.
 dotnet clean --configuration Release --verbosity normal
-dotnet clean --configuration Debug --verbosity normal
 GOTO EOF
 
 :: Run dotnet Pack to build Nuget package
 :_PACK
 CLS
 ECHO ----------------------------------------
-ECHO  Packaging %app_name% v%app_ver%
+ECHO  Packaging %app_name%
 ECHO ----------------------------------------
 ECHO.
-for %%x in (%applist%) do (
-    echo Creating Package: %%x
-    dotnet pack ^
-    --configuration Release ^
-    --force ^
-    --verbosity minimal %CD%\%%x
-    echo.
-)
-echo Finished
+ECHO Creating Package: %app_name%
+dotnet pack --configuration Release --force --verbosity minimal
+ECHO.
+ECHO Finished
 GOTO EOF
 
 :: Install RandGen to the --global dotnet applicaiton directory
 :_INSTALL
 CLS
 ECHO ----------------------------------------
-ECHO  Installing %app_name% v%app_ver%
+ECHO  Installing %app_name%
 ECHO ----------------------------------------
 ECHO.
-for %%x in (%applist%) do (
-    echo Installing Package: %%x
-    dotnet tool install ^
-    --global ^
-    --add-source %CD%\%%x\nupkg %%x
-    echo.
-)
-echo Finished
-
+ECHO Installing Package: %app_name%
+dotnet tool install --global --add-source ./nupkg %app_name%
+ECHO.
+ECHO Finished
 GOTO EOF
 
 :: Uninstall RandGen from the --global dotnet applicaiton directory
 :_UNINSTALL
 CLS
 ECHO --------------------------------------------
-ECHO  Installing %app_name% v%app_ver%
+ECHO  Installing %app_name%
 ECHO --------------------------------------------
 ECHO.
-for %%x in (%applist%) do dotnet tool uninstall -g %%x
+dotnet tool uninstall -g %app_name%
 ECHO.
 
 :: Finished installation
