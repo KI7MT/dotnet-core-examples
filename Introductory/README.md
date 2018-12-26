@@ -1,21 +1,23 @@
 ## Introductory .NET Core Examples
 
-### How to Run Examples
+## How to Run Examples
 
-In order to run the examples, you must [install .NET Core](https://www.microsoft.com/net/learn/get-started/windows).
+In order to run the examples, you must [Install .NET Core SDK](https://www.microsoft.com/net/learn/get-started/windows).
 After that, you can clone the repository, navigate to the example folders and:
 
-* Build / Run by issuing the following commands
-	* `dotnet restore`
-	* `dotnet run`
+### Build / Run by issuing the following commands
 
-### Introductory List
+* `dotnet restore`
+* `make clean`
+* `make pack`
+* `make install`
 
-* [arrays](https://github.com/KI7MT/dotnet-core-examples/tree/master/Introductory/arrays) - examples of using arrays to perform calculations.
+The Run the command displayed after install.
 
-* [for-loops](https://github.com/KI7MT/dotnet-core-examples/tree/master/Introductory/for-loops) - various implementations of using for-loops to
-draw shapes, perform countdowns, and determine values.
+### To Uninstall After Testing
 
-* [if-else](https://github.com/KI7MT/dotnet-core-examples/tree/master/Introductory/if-else) - several entry level if-else statement examples.
+* `make uninstall`
 
-* [while-loops](https://github.com/KI7MT/dotnet-core-examples/tree/master/Introductory/while-loops) - simple high-low game, account balance, payment plan, and calculators.
+### Run Without Install
+
+* `dotnet run`
