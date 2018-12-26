@@ -1,13 +1,13 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
- *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 MilesPerTank.dll
+ *  Target ......: netcoreapp2.2 MilesPerTank.dll
  *  Description..: Calculate Miles per Tank of Fuel
  */
 using System;
 
-namespace Beam.Example.MilesPerTank
+namespace Beam.Example.IntroductoryMilesPerTank
 {
     class Program
     {
@@ -39,11 +39,9 @@ namespace Beam.Example.MilesPerTank
             Console.WriteLine();
             Console.WriteLine(" Miles per Full Tank ....: {0}", milesPerTank);
             Console.WriteLine();
-            Console.Write(" Press Any Key To Exit...");
-            Console.ReadKey();
 
-        } // END - Main Method
+        } // end Main Method
 
-    } // END - class Program
+    } // end class Program
 
-} // END - namespace Beam.Example.MilesPerTank
+} // end Beam.Example.IntroductoryMilesPerTank

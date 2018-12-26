@@ -1,13 +1,13 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
- *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 NetPayCalculator.dll
+ *  Target ......: netcoreapp2.2 NetPayCalculator.dll
  *  Description..: Calculate Net Pay by taking out fixed tax rates
  */
 using System;
 
-namespace Beam.Example.NetPayCalculator
+namespace Beam.Example.Introductory.NetPayCalculator
 {
     class Program
     {
@@ -50,11 +50,9 @@ namespace Beam.Example.NetPayCalculator
             Console.WriteLine("   Social Security .......: {0:C}", -ssTax);
             Console.WriteLine(" Net Pay .................: {0:C}", netPay);
             Console.WriteLine();
-            Console.Write(" Press Any Key To Exit...");
-            Console.ReadKey();
 
-        } // END - Main Method
+        } // end Main Method
 
-    } // END - class Program
+    } // end class Program
 
-} // END - namespace Beam.Example.NetPayCalculator
+} // end namespace Beam.Example.Introductory.NetPayCalculator
