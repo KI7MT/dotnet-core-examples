@@ -1,6 +1,6 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
- *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
  *  Target ......: netcoreapp2.0 BasicMath.dll
  *  Description..: Calculate Sum, Difference, Quotient, Product, and Average
@@ -45,11 +45,9 @@ namespace BasicMath
             Console.WriteLine(" Product ..............: {0}", pOut);
             Console.WriteLine(" Average ..............: {0}", aOut);
             Console.WriteLine();
-            Console.Write(" Press Any Key To Exit...");
-            Console.ReadKey();
 
-        } // END - Main Method
+        } // end Main Method
 
-    } // END - class Program
+    } // end class Program
 
-} // END - namespace Beam.Example.BasicMath
+} // end namespace Beam.Example.BasicMath
