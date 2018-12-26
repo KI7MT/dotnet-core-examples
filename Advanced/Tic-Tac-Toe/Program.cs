@@ -10,7 +10,7 @@
 using System;
 using System.Linq;
 
-namespace Beam.Example.Advanced.TicTacToe
+namespace Beam.Example.Advanced.Tic_Tac_Toe
 {
     class Program
     {

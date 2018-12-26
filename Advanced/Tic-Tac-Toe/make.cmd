@@ -1,7 +1,7 @@
 ::-----------------------------------------------------------------------------::
 :: Name .........: make.cmd
-:: Project ......: dotnet-core-examples : TicTacToe
-:: Description ..: Make file to manage TicTacToe Globally
+:: Project ......: dotnet-core-examples : TikTakToe
+:: Description ..: Make file to manage TikTakToe Globally
 :: Project URL ..: https://github.com/ki7mt/dotnet-core-examples
 ::
 :: Author .......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
@@ -24,7 +24,7 @@
 @ECHO OFF
 
 :: Applicaiton Name
-set app_name=TicTacToe
+set app_name=TikTakToe
 set app_ver=1.0.0
 
 :: Get Command line Options %1
