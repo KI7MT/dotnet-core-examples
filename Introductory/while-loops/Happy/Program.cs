@@ -1,13 +1,13 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
- *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 Happy.dll
- *  Description..: While (true) loop
+ *  Target ......: netcoreapp2.2 Happy.dll
+ *  Description..: While (true) loop Happy
  */
 using System;
 
-namespace Beam.Example.Happy
+namespace Beam.Example.Introductory.Happy
 {
     class Program
     {
@@ -45,11 +45,9 @@ namespace Beam.Example.Happy
 
             // print footer
             Console.WriteLine();
-            Console.WriteLine(" Press Any Key to Exit...");
-            Console.ReadKey();
         
-        } // END - Main Method
+        } // end Main Method
 
-    } // END - class Program
+    } // end class Program
 
-} // END - namespace Beam.Example.Happy
+} // end namespace Beam.Example.Introductory.Happy
