@@ -7,7 +7,7 @@
  */
 using System;
 
-namespace SingleTree
+namespace Beam.Example.Introductory.SingleTree
 {
     class Program
     {
@@ -40,11 +40,9 @@ namespace SingleTree
 
             // print footer
             Console.WriteLine();
-            Console.Write("Press Any Key to Exit...");
-            Console.ReadKey();
 
-        } // END - Main Method
+        } // end Main Method
 
-    } // END - class Program
+    } // end class Program
 
-} // END - namespace Beam.Example.SingleTree
+} // end namespace Beam.Example.Introductory.SingleTree
