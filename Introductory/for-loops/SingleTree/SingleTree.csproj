@@ -4,7 +4,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <Authors>Greg Beam, KI7MT</Authors>
-    <Description>Simple Count-Down Counters</Description>
+    <Description>Creates a signle tree diagram from with loops</Description>
 
     <!-- New .Net Core v2.2 License Requirement: fixes warning NU5125 -->
     <Copyright>GPLv3</Copyright>
