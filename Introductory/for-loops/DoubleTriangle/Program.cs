@@ -17,7 +17,7 @@
  */
 using System;
 
-namespace DoubleTriangle
+namespace beam.example.DoubleTriangle
 {
     class Program
     {
@@ -59,13 +59,8 @@ namespace DoubleTriangle
             }
             // end outer loop
 
-            // print footer
-            Console.WriteLine();
-            Console.Write("Press Any Key to Exit...");
-            Console.ReadKey();
+        } // end Main Method
 
-        } // END - Main Method
+    } // end lass Program
 
-    } // END - class Program
-
-} // END - namespace Beam.Example.Diamond
+} // end namespace DoubleTriangle
