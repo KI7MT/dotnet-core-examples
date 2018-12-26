@@ -1,7 +1,7 @@
 ::-----------------------------------------------------------------------------::
 :: Name .........: make.cmd
-:: Project ......: dotnet-core-examples : Diamond
-:: Description ..: Make file to manage Diamond Globally
+:: Project ......: dotnet-core-examples : DoubleTriangle
+:: Description ..: Make file to manage DoubleTriangle Globally
 :: Project URL ..: https://github.com/ki7mt/dotnet-core-examples
 ::
 :: Author .......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
@@ -24,7 +24,7 @@
 @ECHO OFF
 
 :: Applicaiton Name
-set app_name=Diamond1
+set app_name=DoubleTriangle
 set app_ver=1.0.0
 
 :: Get Command line Options %1
