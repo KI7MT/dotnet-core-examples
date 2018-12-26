@@ -1,13 +1,13 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
- *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 GradeDetermination.dll
+ *  Target ......: netcoreapp2.2 GradeDetermination.dll
  *  Description..: Determine letter grade from three input values
  */
 using System;
 
-namespace GradeDetermination
+namespace Beam.Example.Introductory.GradeDetermination
 {
     class Program
     {
@@ -62,11 +62,9 @@ namespace GradeDetermination
             Console.WriteLine();
             Console.WriteLine(" Score Average .......: {0:#,#.000}", aveScore);
             Console.WriteLine(" Letter Grade ........: {0}\n", letterGrade);
-            Console.Write(" Press Any Key to Exit...");
-            Console.ReadKey();
 
-         } // END - Main Method
+         } // end Main Method
 
-    } // END - class Program
+    } // end class Program
 
-} // END - namespace Beam.Example.GradeDetermination
+} // end Beam.Example.Introductory.GradeDetermination
