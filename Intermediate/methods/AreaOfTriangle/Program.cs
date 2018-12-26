@@ -1,13 +1,13 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
- *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
  *  Target ......: netcoreapp2.0 AreaOfTriangle.dll
  *  Description..: Uses a method outside of Main to perform a calculation
  */
 using System;
 
-namespace Beam.Example.AreaOfTriangle
+namespace Beam.Example.Intermediate.AreaOfTriangle
 {
     class Program
     {
@@ -48,8 +48,6 @@ namespace Beam.Example.AreaOfTriangle
 
             // Pause the results
             Console.WriteLine();
-            Console.Write(" Press Any Key to Exit ... ");
-            Console.ReadKey();
         }
 
         #endregion
@@ -64,6 +62,6 @@ namespace Beam.Example.AreaOfTriangle
 
         #endregion
 
-    } // END - class program
+    } // end class program
 
-} // END - namespace Beam.Example.AreaOfTriangle
+} // end namespace Beam.Example.Intermediate.AreaOfTriangle
