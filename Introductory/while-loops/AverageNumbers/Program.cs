@@ -1,13 +1,13 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
- *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 AverageNumbers.dll
+ *  Target ......: netcoreapp2.2 AverageNumbers.dll
  *  Description..: Average a series of Even and Odd numbers
  */
 using System;
 
-namespace Beam.Example.AverageNumbers
+namespace Beam.Example.Introductory.AverageNumbers
 {
     class Program
     {
@@ -78,11 +78,9 @@ namespace Beam.Example.AverageNumbers
             Console.WriteLine(" Even average is ..: {0}", evenAverage);
             Console.WriteLine(" Odd average is ...: {0}", oddAverage);
             Console.WriteLine();
-            Console.WriteLine(" Press Any Key to Exit...");
-            Console.ReadKey();
 
-        } // END - Main Method
+        } // end Main Method
 
-    } // END - class Program
+    } // end class Program
 
-} // END - namespace Beam.Example.AverageNumbers
+} // end namespace Beam.Example.Introductory.AverageNumbers
