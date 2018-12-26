@@ -9,7 +9,7 @@
  */
 using System;
 
-namespace Beam.Example.Employee.Commission.V2
+namespace TicTacToe
 {
     class Program
     {

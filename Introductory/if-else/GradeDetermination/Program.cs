@@ -7,7 +7,7 @@
  */
 using System;
 
-namespace Beam.Example.GradeDetermination
+namespace GradeDetermination
 {
     class Program
     {

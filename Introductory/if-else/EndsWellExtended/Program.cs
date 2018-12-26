@@ -9,7 +9,7 @@
  */
 using System;
 
-namespace Beam.Example.EndsWellExtended
+namespace EndsWellExtended
 {
     class Program
     {

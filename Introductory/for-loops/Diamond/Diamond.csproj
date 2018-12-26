@@ -3,6 +3,27 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.2</TargetFramework>
+    <Authors>Greg Beam, KI7MT</Authors>
+    <Description>Diamond using for loops</Description>
+
+    <!-- New .Net Core v2.2 License Requirement: fixes warning NU5125 -->
+    <Copyright>GPLv3</Copyright>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+
+    <!-- Package as Global Tool -->
+    <PackageTags>dotnet core</PackageTags>
+    <IsPackable>true</IsPackable>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>Diamond1</ToolCommandName>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+
   </PropertyGroup>
+
+    <!-- New .Net Core v2.2 License Requirement: fixes warning NU5125 -->
+  <ItemGroup>
+    <None Include="licenses\..\..\..\..\LICENSE" Pack="true" PackagePath="" />
+  </ItemGroup>
+
 
 </Project>

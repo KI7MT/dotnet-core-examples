@@ -8,7 +8,7 @@
  */
 using System;
 
-namespace Beam.Example.EndsWell
+namespace EndsWell
 {
     class Program
     {

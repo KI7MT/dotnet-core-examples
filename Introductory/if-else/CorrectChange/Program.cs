@@ -7,7 +7,7 @@
  */
 using System;
 
-namespace Beam.Example.CorrectChange
+namespace CorrectChange
 {
     class Program
     {
