@@ -1,13 +1,13 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
- *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 Cubed.dll
+ *  Target ......: netcoreapp2.2 Cubed.dll
  *  Description..: While loop to calculate cubed values
  */
 using System;
 
-namespace Beam.Example.Cubed
+namespace Beam.Example.Introductory.Cubed
 {
     class Program
     {
@@ -32,12 +32,10 @@ namespace Beam.Example.Cubed
 
             // print footer
             Console.WriteLine();
-            Console.WriteLine(" Press Any Key to Exit...");
-            Console.ReadKey();
 
-        } // END - Main Method
+        } // en Main Method
 
-    } // END - class Program
+    } // end class Program
 
-} // END - namespace Beam.Example.Cubed
+} // end namespace Beam.Example.Introductory.Cubed
 
