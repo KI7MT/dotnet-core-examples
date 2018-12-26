@@ -1,13 +1,13 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
- *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
  *  Target ......: netcoreapp2.0 CalculatePay.dll
  *  Description..: Uses a method outside of Main to perform a calculation
  */
 using System;
 
-namespace Beam.Example.CalculatePay
+namespace Beam.Example.Intermediate.CalculatePay
 {
     class Program
     {
@@ -54,9 +54,6 @@ namespace Beam.Example.CalculatePay
 
             // print footer
             Console.WriteLine();
-            Console.Write(" Press Any Key to Exit ... ");
-            Console.ReadKey();
-
         }
 
         #endregion
@@ -85,6 +82,6 @@ namespace Beam.Example.CalculatePay
 
         #endregion
 
-    } // END - class Program
+    } // end class Program
 
-} // END - namespace Beam.Example.CalculatePay
+} // end namespace Beam.Example.Intermediate.CalculatePay
