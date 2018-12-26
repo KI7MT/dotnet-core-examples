@@ -1,13 +1,13 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
- *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 PowerOf.dll
+ *  Target ......: netcoreapp2.2 PowerOf.dll
  *  Description..: While loop that calculates powers of 10  for x < <= 10
  */
 using System;
 
-namespace Beam.Example.PowerOf
+namespace Beam.Example.Introductory.PowerOf
 {
     class Program
     {
@@ -32,11 +32,9 @@ namespace Beam.Example.PowerOf
 
             // print footer
             Console.WriteLine();
-            Console.WriteLine(" Press Any Key to Exit...");
-            Console.ReadKey();
 
-        } // END - Main Method
+        } // end Main Method
 
-    } // END - class Program
+    } // end class Program
 
-} // END - namespace Beam.Example.PowerOf
+} // end namespace Beam.Example.Introductory.PowerOf
