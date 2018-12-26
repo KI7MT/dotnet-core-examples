@@ -4,17 +4,25 @@
 >queries need to be updated due to Database changes between version data-sets.
 >At present, the queries render null results.
 
-## TODO
+## ToDo
 
 * Full explanation of `LBService` and `LBClient` for `RedisLeaderboard`
 
 ## To run the Redis Leaderboard
 
-* Requires Redis running on default port => localhost:6379
-* `dotnet restore`
-* `make clean`
-* `make pack`
-* `make install`
+Requires Redis running on default port => localhost:6379. If you have a remote
+server or running Redis on a different port, update the `app_config` files
+in each assembly. Likewise, the current password is set to NULL, which is the
+default installation `password`.
+
+### Install Steps
+
+1. `dotnet restore`
+2. `make clean`
+3. `make pack`
+4. `make install`
+
+### Running the Service and Client (both are command-line)
 
 ```shell
 # Open First Console and type:
