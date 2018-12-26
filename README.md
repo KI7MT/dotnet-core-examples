@@ -138,7 +138,6 @@ in `(Program.cs`) file.
 
 | Application |Type|Description
 | :---        |:---|:---
-
 |[AreaOfCircle](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate)|methods|Use methods to calc the Area of a Circle
 |[AreaOfTriangle](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate)|methods|Use methods to calc the Area of a Triangle
 |[CalculatePay](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate)|methods|Use methods to calculate Gross Pay
