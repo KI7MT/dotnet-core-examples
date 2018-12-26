@@ -138,7 +138,7 @@ in `(Program.cs`) file.
 
 | Application |Type|Description
 | :---        |:---|:---
-|[EmployeeCommission1](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate)|loops|Calculate commission for one or more employee's
+
 |[AreaOfCircle](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate)|methods|Use methods to calc the Area of a Circle
 |[AreaOfTriangle](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate)|methods|Use methods to calc the Area of a Triangle
 |[CalculatePay](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate)|methods|Use methods to calculate Gross Pay
@@ -157,8 +157,9 @@ techniques.
 
 | Application |Type|Description
 | :---        |:---|:---
-|[EmployeeCommission2](https://github.com/KI7MT/dotnet-core-examples/tree/master/Advanced)|various|Uses: Struct, Array of Struct, if-else, loops and methods
-|[TicTacToe](https://github.com/KI7MT/dotnet-core-examples/tree/master/Advanced)|various|Game: uses 2D Arrays, if-else, loops, methods, and colors
+|[EmployeeCommissionV1](https://github.com/KI7MT/dotnet-core-examples/tree/master/Advanced) |various |Calculate commission for one or more employee's
+|[EmployeeCommissionV2](https://github.com/KI7MT/dotnet-core-examples/tree/master/Advanced) |various |Uses: Struct, Array of Struct, if-else, loops and methods
+|[TikTakToe](https://github.com/KI7MT/dotnet-core-examples/tree/master/Advanced)|various|Game: uses 2D Arrays, if-else, loops, methods, and colors
 
 ## Database WebMVC WebAPI
 
@@ -170,5 +171,5 @@ launch.
 
 | Application |Database |DB Setup|Status|Description
 | :---        |:---|:---|:---    |:---
-|[RedisLeaderboard](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|Redis|See Docs|Stable|Ham Radio Contest Leaderboard Example
+|[RedisLeaderboard](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|Redis|[See Docs](https://github.com/KI7MT/jtsdk-dotnet-core/wiki/Install-Redis)|Stable|Ham Radio Contest Leaderboard Example
 |[WslNeo4J](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|Neo4J|need doc|Needs-Work|Movie DB queries using Console App and Neo4j
