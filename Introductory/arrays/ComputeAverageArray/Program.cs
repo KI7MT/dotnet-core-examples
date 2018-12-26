@@ -8,7 +8,7 @@
  */
 using System;
 
-namespace Beam.Example.ComputeAverageArray
+namespace ComputeAverageArray
 {
     class Program
     {
