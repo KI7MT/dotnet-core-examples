@@ -15,7 +15,7 @@
     <PackageTags>dotnet core</PackageTags>
     <IsPackable>true</IsPackable>
     <PackAsTool>true</PackAsTool>
-    <ToolCommandName>DoubleTriangle</ToolCommandName>
+    <ToolCommandName>DoubbleTriangle</ToolCommandName>
     <PackageOutputPath>./nupkg</PackageOutputPath>
 
   </PropertyGroup>
