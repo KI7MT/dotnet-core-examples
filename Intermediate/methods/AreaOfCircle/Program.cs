@@ -1,13 +1,13 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
- *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
  *  Target ......: netcoreapp2.0 AreaOfCircle.dll
  *  Description..: Uses a method outside of Main to perform a calculation
  */
 using System;
 
-namespace Beam.Example.AreaOfCircle
+namespace Beam.Example.Intermediate.AreaOfCircle
 {
     class Program
     {
@@ -43,8 +43,6 @@ namespace Beam.Example.AreaOfCircle
 
             // print footer
             Console.WriteLine();
-            Console.Write(" Press Any Key to Exit ... ");
-            Console.ReadKey();
         }
 
         #endregion
@@ -59,6 +57,6 @@ namespace Beam.Example.AreaOfCircle
 
         #endregion
 
-    } // END - class Program
+    } // end class Program
 
-} // END - namespace Beam.Example.AreaOfCircle
+} // end namespace Beam.Example.Intermediate.AreaOfCircle
