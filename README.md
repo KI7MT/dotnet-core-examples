@@ -143,7 +143,7 @@ in `(Program.cs`) file.
 |[CalculatePay](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate)|methods|Use methods to calculate Gross Pay
 |[InchesToCentimeters](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate)|methods|Use methods to Convert In. to Cn.
 |[VolumeOfCylinder](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate)|methods|Use methods to calc the Volume of a Cylinder
-|[JobListing](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate)|struct|Use Two Struct to generate job postings
+|[JobListing](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate)|struct|Use struct to generate job postings
 |[MSLListing](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate)|struct|Use struct to add to listings array and MLS IDs
 
 ## Advanced Structures Methods and Classes
