@@ -30,7 +30,7 @@ LBClient
 
 1. Select Single update, or loop
 
-# To Stop the loop mode, use the ESC Key. Tis will take a few seconds as the
-# sequence is set between 3 and 6 second updates. At the break, you'll be
-# back to the menu, select Q to quit.
+# To stop loop-mode, use the ESC Key. This will take a few seconds as the
+# sequence is set between 3 and 6 second updates (app.config). At the break,
+# you will be back to the main-menu, select Q to quit.
 ```
