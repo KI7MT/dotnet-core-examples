@@ -1,13 +1,13 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
- *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 LeaguesToNauticalMiles.dll
+ *  Target ......: netcoreapp2.2 LeaguesToNauticalMiles.dll
  *  Description..: User Input Leagues => convert Leagues to Nautical Miles
  */
 using System;
 
-namespace LeaguesToNauticalMiles
+namespace Beam.Example.IntroductoryLeaguesToNauticalMiles
 {
     class Program
     {
@@ -29,11 +29,9 @@ namespace LeaguesToNauticalMiles
             // print result
             Console.Write(" Nautical Miles ...........: {0}\n", nmOut);
             Console.WriteLine();
-            Console.Write(" Press Any Key To Exit...");
-            Console.ReadKey();
 
-        } // END - Main Method
+        } // end Main Method
     
-    } // END - class Program
+    } // end class Program
 
-} // END - namespace Beam.Example.LeaguesToNauticalMiles
+} // end namespace Beam.Example.IntroductoryLeaguesToNauticalMiles
