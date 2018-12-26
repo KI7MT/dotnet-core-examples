@@ -1,14 +1,14 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
- *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 Job.Listing.dll
+ *  Target ......: netcoreapp2.2 JobListing.dll
  *  Description..: 1). Use Two Struct to generate job postings
  *                 2). Uses Random to generate Job ID's
  */
 using System;
 
-namespace Beam.Example.Job.Listing
+namespace Beam.Example.Intermediate.JobListing
 {
     class Program
     {
@@ -107,12 +107,10 @@ namespace Beam.Example.Job.Listing
 
             // print footer
             Console.WriteLine();
-            Console.Write(" Press Any Key to Exit ... ");
-            Console.ReadKey();
         }
 
         #endregion
 
-    } // END - class Program
+    } // end class Program
 
-} // END - namespace Beam.Example.Job.Listing
+} // end namespace Beam.Example.Intermediate.JobListing
