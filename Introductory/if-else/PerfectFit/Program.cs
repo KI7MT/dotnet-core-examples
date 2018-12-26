@@ -1,14 +1,14 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
- *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 PerfectFit.dll
+ *  Target ......: netcoreapp2.2 PerfectFit.dll
  *  Description..: Determine various apsects of Squares and Rectangles
  *                 
  */
 using System;
 
-namespace Beam.Example.PerfectFit
+namespace Beam.Example.Introductory.PerfectFit
 {
     class Program
     {
@@ -87,11 +87,9 @@ namespace Beam.Example.PerfectFit
             Console.WriteLine();
             Console.WriteLine(" {0}", greatestArea);
             Console.WriteLine(" {0}\n", whoFits);
-            Console.Write(" Press Any Key to Exit...");
-            Console.ReadKey();
 
-        } // END - Main Method
+        } // end Main Method
 
-    } // END - class Program
+    } // end class Program
 
-} // END - namespace Beam.Example.PerfectFit
+} // end namespace Beam.Example.Introductory.PerfectFit
