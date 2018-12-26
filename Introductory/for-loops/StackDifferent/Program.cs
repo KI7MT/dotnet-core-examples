@@ -1,13 +1,13 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
- *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 StackDifferent.dll
+ *  Target ......: netcoreapp2.2 StackDifferent.dll
  *  Description..: For Loop Stack Different Numbers Across
  */
 using System;
 
-namespace Beam.Example.StackDifferent
+namespace Beam.Example.Introductory.StackDifferent
 {
     class Program
     {
@@ -29,11 +29,9 @@ namespace Beam.Example.StackDifferent
 
             // print footer
             Console.WriteLine();
-            Console.Write("Press Any Key to Exit..");
-            Console.ReadKey();
 
-        } // END - Main Method
+        } // end Main Method
 
-    } // END - class Program
+    } // end class Program
 
-} // END - namespace Beam.Example.StackDifferent
+} // end namespace Beam.Example.StackDifferent
