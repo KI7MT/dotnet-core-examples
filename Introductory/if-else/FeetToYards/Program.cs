@@ -1,13 +1,13 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
- *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 FeetToYards.dll
+ *  Target ......: netcoreapp2.2 FeetToYards.dll
  *  Description..: User Input feet => convert feet to yards
  */
 using System;
 
-namespace FeetToYards
+namespace Beam.Example.Introductory.FeetToYards
 {
     class Program
     {
@@ -28,11 +28,9 @@ namespace FeetToYards
             // print results
             Console.Write(" Square yards .......: {0}\n", squareYardOut);
             Console.WriteLine();
-            Console.Write(" Press Any Key to Exit...");
-            Console.ReadKey();
 
-        } // END - Main Method
+        } // end Main Method
     
-    } // END - class Program
+    } // end class Program
 
-} // END - namespace Beam.Example.FeetToYards
+} // end Beam.Example.Introductory.FeetToYards
