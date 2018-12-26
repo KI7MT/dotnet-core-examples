@@ -1,7 +1,8 @@
 ## Database .NET Core Examples
 
->NOTE: RedisLeaderboard is function, as is Neo4J, however, Neo4J queries need
-to be updated due to Dayabase changes between version data sets.
+>NOTE: RedisLeaderboard is fully functional and rendering properly. Neo4J, however,
+>queries need to be updated due to Database changes between version data-sets.
+>At present, the queries render null results.
 
 ## TODO
 
