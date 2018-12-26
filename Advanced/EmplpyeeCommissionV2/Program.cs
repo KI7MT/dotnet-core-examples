@@ -1,6 +1,6 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
- *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Advanced
  *  Target ......: netcoreapp2.0 Employee.Commission.V2.dll
  *  Description..: Calculate commission for one or more employee's
@@ -265,12 +265,10 @@ namespace Beam.Example.Advanced.EmployeeCommissionV2
         static void printFooter()
         {
             Console.WriteLine();
-            Console.WriteLine(" Press Any Key to Exit...");
-            Console.ReadKey();
         }
 
         #endregion
 
-    } // END - class Program
+    } // end class Program
 
-} // END - namespace Beam.Example.Advanced.Employee.Commission
+} // end namespace Beam.Example.Advanced.EmployeeCommissionV2

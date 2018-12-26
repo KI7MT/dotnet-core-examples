@@ -317,6 +317,6 @@ namespace Beam.Example.Advanced.Tic_Tac_Toe
             Console.ResetColor();
         }
 
-    } // END - class Program
+    } // end class Program
 
-} // END - Beam.Example.Advanced.TicTacToe
+} // end Beam.Example.Advanced.TikTakToe

@@ -1,6 +1,6 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
- *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Intermediate
  *  Target ......: netcoreapp2.0 Employee.Commission.V1.dll
  *  Description..: Calculate commission for one or more employee's
@@ -8,7 +8,7 @@
  */
 using System;
 
-namespace Beam.Example.Employee.Commission.V1
+namespace Beam.Example.Advanced.EmployeeCommissionV1
 {
     class Program
     {
@@ -144,11 +144,9 @@ namespace Beam.Example.Employee.Commission.V1
             Console.WriteLine(" Total Commission .......: {0:c}", totalCommission);
             Console.WriteLine("-------------------------------------------");
             Console.WriteLine();
-            Console.WriteLine(" Press Any Key to Exit...");
-            Console.ReadKey();
         
-        } // END - Main Method
+        } // end Main Method
 
-    } // END - class Program
+    } // end class Program
 
-} // END - namespace Beam.Example.Intermediate.Employee.Commission
+} // end namespace Beam.Example.Advanced.EmployeeCommissionV1
