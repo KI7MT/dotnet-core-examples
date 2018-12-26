@@ -4,7 +4,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <Authors>Greg Beam, KI7MT</Authors>
-    <Description>Determine the suffix for a given integer with minimal validation.</Description>
+    <Description>Determine the suffix for a given integer 1 to 10.</Description>
 
     <!-- New .Net Core v2.2 License Requirement: fixes warning NU5125 -->
     <Copyright>GPLv3</Copyright>

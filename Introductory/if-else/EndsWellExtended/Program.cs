@@ -1,15 +1,15 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
- *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 EndsWellExtended.dll
+ *  Target ......: netcoreapp2.2 EndsWellExtended.dll
  *  Description..: Determine the suffix, as spoken, for a given integer with
  *                 minimal validation. Valid for integers 1 thru 1000.
  *                 
  */
 using System;
 
-namespace EndsWellExtended
+namespace Beam.Example.Introductory.EndsWellExtended
 {
     class Program
     {
@@ -24,7 +24,7 @@ namespace EndsWellExtended
             // user input - Minimal Validation
             Console.WriteLine();
             Console.WriteLine(" Enter a number between 1 and 1000");
-            Console.WriteLine(" Decimal values are rounded to neaest whole number\n");
+            Console.WriteLine(" Decimal values are rounded to nearest whole number\n");
 
             Console.Write(" Enter Number ........: ");
             num1 = Convert.ToDouble(Console.ReadLine());
@@ -63,11 +63,9 @@ namespace EndsWellExtended
             {
                 Console.WriteLine(" Number With Ending ..: {0}{1}\n", num1, ext1);
             }
-            Console.Write(" Press Any Key to Exit...");
-            Console.ReadKey();
 
-        } // END - Main Method
+        } // end Main Method
 
-    } // END - class Program
+    } // end class Program
 
-} // END - namespace Beam.Example.EndsWellExtended
+} // end namespace Beam.Example.Introductory.EndsWellExtended
