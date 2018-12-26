@@ -1,6 +1,6 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
- *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
  *  Target ......: netcoreapp2.0 TargetValueArray.dll
  *  Description..: 1). Enter 10 values into an array
@@ -55,12 +55,10 @@ namespace Beam.Example.TargetValueArray
             Console.WriteLine();
 
             // print footer
-            Console.WriteLine();
-            Console.Write(" Press Any Key to Exit ... ");
-            Console.ReadKey();
+            Console.WriteLine("\nFinished");
 
-        } // END - Main Method
+        } // end Main Method
 
-    } // END - class Program
+    } // end class Program
 
-} // END - namespace Beam.Example.TargetValueArray
+} // end namespace Beam.Example.TargetValueArray

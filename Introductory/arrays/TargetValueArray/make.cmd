@@ -1,6 +1,6 @@
 ::-----------------------------------------------------------------------------::
 :: Name .........: make.cmd
-:: Project ......: dotnet-core-examples : SimpleArray
+:: Project ......: dotnet-core-examples : TargetValueArray
 :: Description ..: Make file to manage RandGen Globally
 :: Project URL ..: https://github.com/ki7mt/dotnet-core-examples
 ::
@@ -24,7 +24,7 @@
 @ECHO OFF
 
 :: Applicaiton Name
-set app_name=SimpleArray
+set app_name=TargetValueArray
 set app_ver=1.0.0
 
 :: Get Command line Options %1
