@@ -43,12 +43,10 @@ namespace Beam.Example.SimpleArray
             // end loop
 
             // print footer
-            Console.WriteLine();
-            Console.Write(" Press Any Key to Exit ... ");
-            Console.ReadKey();
+            Console.WriteLine("\nFinished");
 
-        } // END - Main Method
+        } // end Main Method
 
-    } // END - class Program
+    } // end class Program
 
-} // END - namespace Beam.Example.SimpleArray
+} // end namespace Beam.Example.SimpleArray

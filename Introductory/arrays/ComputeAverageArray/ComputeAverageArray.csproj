@@ -4,7 +4,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <Authors>Greg Beam, KI7MT</Authors>
-    <Description>Comput average value from an array</Description>
+    <Description>Compute average value from an array of five integers</Description>
 
     <!-- New .Net Core v2.2 License Requirement: fixes warning NU5125 -->
     <Copyright>GPLv3</Copyright>
