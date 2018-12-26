@@ -43,3 +43,30 @@ LBClient
 # sequence is set between 3 and 6 second updates (app.config). At the break,
 # you will be back to the main-menu, select Q to quit.
 ```
+
+## Screen Shots
+
+A few sample shots of the RedisLeaderboard.
+
+#### Service Main Menu
+| ![Welcome Screen](docs/images/LBService.PNG?raw=true) |
+|:--:|
+| *LBService Menu* |
+
+#### LBService Looping Through Updates
+
+| ![Welcome Screen](docs/images/LBService-Loop-Mode.PNG?raw=true) |
+|:--:|
+| *LBService in Loop Mode* |
+
+#### LBClient Main Menu
+
+| ![Welcome Screen](docs/images/LBClient.PNG?raw=true) |
+|:--:|
+| *LBClient Main Menu*
+
+#### LBClient Loop Mode
+
+| ![Welcome Screen](docs/images/LBClient-Loop-Mode.PNG?raw=true) |
+|:--:|
+| *LBClient in Loop Mode*
