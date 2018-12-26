@@ -1,4 +1,4 @@
-## Intermediate .NET Core Examples
+## Database .NET Core Examples
 
 >NOTE: RedisLeaderboard is function, as is Neo4J, however, Neo4J queries need
 to be updated due to Dayabase changes between version data sets.
