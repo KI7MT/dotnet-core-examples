@@ -2,7 +2,34 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <Authors>Greg Beam, KI7MT</Authors>
+    <Description>Simple Count-Down Counters</Description>
+
+    <!-- New .Net Core v2.2 License Requirement: fixes warning NU5125 -->
+    <Copyright>GPLv3</Copyright>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+
+    <!-- Package as Global Tool -->
+    <PackageTags>dotnet core</PackageTags>
+    <IsPackable>true</IsPackable>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>RocketLaunch</ToolCommandName>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+
   </PropertyGroup>
+
+    <!-- New .Net Core v2.2 License Requirement: fixes warning NU5125 -->
+  <ItemGroup>
+    <None Include="licenses\..\..\..\..\LICENSE" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+  <!-- common vars https://msdn.microsoft.com/en-us/library/c02as0cs.aspx?f=255&MSPPError=-2147217396 -->
+  <Target Name="SpicNSpan" AfterTargets="Clean"> 
+    <RemoveDir Directories="$(TargetDir)" /> <!-- bin -->
+    <RemoveDir Directories="$(SolutionDir).vs" /> <!-- .vs -->
+    <RemoveDir Directories="$(ProjectDir)$(BaseIntermediateOutputPath)" /> <!-- obj -->
+  </Target>
 
 </Project>

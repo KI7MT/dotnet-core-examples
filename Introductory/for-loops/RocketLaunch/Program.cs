@@ -1,13 +1,13 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
- *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 RocketLaunch.dll
+ *  Target ......: netcoreapp2.2 RocketLaunch.dll
  *  Description..: For loop countdown
  */
 using System;
 
-namespace Beam.Example.RocketLaunch
+namespace Beam.Example.Introductory.RocketLaunch
 {
     class Program
     {
@@ -24,12 +24,8 @@ namespace Beam.Example.RocketLaunch
             Console.WriteLine("\n\n Blast Off!!");
             Console.WriteLine();
 
-            // print footer
-            Console.Write(" Press Any Key to Exit...");
-            Console.ReadKey();
+        } // end Main Method
 
-        } // END - Main Method
+    } // end class Program
 
-    } // END - class Program
-
-} // END - namespace Beam.Example.RocketLaunch
+} // end Beam.Example.Introductory.RocketLaunch
