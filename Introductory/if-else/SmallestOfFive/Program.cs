@@ -1,13 +1,13 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
- *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 SmallestOfFive.dll
+ *  Target ......: netcoreapp2.2 SmallestOfFive.dll
  *  Description..: Determine the smallest of five numbers
  */
 using System;
 
-namespace Beam.Example.SmallestOfFive
+namespace Beam.Example.Introductory.SmallestOfFive
 {
     class Program
     {
@@ -65,11 +65,9 @@ namespace Beam.Example.SmallestOfFive
             // print results
             Console.WriteLine();
             Console.WriteLine(" Smallest number is ...: {0}\n", smallestNum);
-            Console.Write(" Press Any Key to Exit...");
-            Console.ReadKey();
 
-        } // END - Main Method
+        } // end Main Method
 
-    } // END - class Program
+    } // end class Program
 
-} // END - namespace Beam.Example.SmallestOfFive
+} // end namespace Beam.Example.Introductory.SmallestOfFive
