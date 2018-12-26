@@ -170,4 +170,5 @@ launch.
 
 | Application |Database |DB Setup|Status|Description
 | :---        |:---|:---|:---    |:---
+|[RedisLeaderboard](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|Redis|See Docs|Stable|Ham Radio Contest Leaderboard Example
 |[WslNeo4J](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|Neo4J|need doc|Needs-Work|Movie DB queries using Console App and Neo4j
