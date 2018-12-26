@@ -1,13 +1,13 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
- *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 CorrectChange.dll
+ *  Target ......: netcoreapp2.2 CorrectChange.dll
  *  Description..: Use Modulus to calculate correct change
  */
 using System;
 
-namespace CorrectChange
+namespace Beam.Example.Introductory.CorrectChange
 {
     class Program
     {
@@ -42,11 +42,9 @@ namespace CorrectChange
             Console.WriteLine(" Nickles ...: {0}", Math.Truncate(iN1));
             Console.WriteLine(" Pennies  ..: {0}", iP1);
             Console.WriteLine();
-            Console.Write(" Press Any Key To Exit...");
-            Console.ReadKey();
 
-        } // END - Main Method
+        } // end Main Method
 
-    } // END - class Program
+    } // end class Program
 
-} // END - namespace Beam.Example.CorrectChange
+} // end Beam.Example.Introductory.CorrectChange
