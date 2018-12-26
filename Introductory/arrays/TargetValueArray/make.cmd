@@ -1,7 +1,7 @@
 ::-----------------------------------------------------------------------------::
 :: Name .........: make.cmd
 :: Project ......: dotnet-core-examples : TargetValueArray
-:: Description ..: Make file to manage RandGen Globally
+:: Description ..: Make file to manage TargetValueArray Globally
 :: Project URL ..: https://github.com/ki7mt/dotnet-core-examples
 ::
 :: Author .......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
