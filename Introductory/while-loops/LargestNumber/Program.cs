@@ -1,13 +1,13 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
- *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 LargestNumber.dll
+ *  Target ......: netcoreapp2.2 LargestNumber.dll
  *  Description..: While loop entry, print largest number
  */
 using System;
 
-namespace Beam.Example.LargestNumber
+namespace Beam.Example.Introductory.LargestNumber
 {
     class Program
     {
@@ -41,14 +41,12 @@ namespace Beam.Example.LargestNumber
             // print results
             Console.WriteLine();
             Console.WriteLine(" Largest value was .........: {0}", largestNumber);
-            Console.WriteLine();
 
             // print footer
-            Console.WriteLine(" Press Any Key to Exit...");
-            Console.ReadKey();
+            Console.WriteLine();
+            
+        } // end Main Method
 
-        } // END - Main Method
+    } // end class Program
 
-    } // END - class Program
-
-} // END - namespace Beam.Example.LargestNumber
+} // end namespace Beam.Example.Introductory.LargestNumber
