@@ -4,7 +4,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <Authors>Greg Beam, KI7MT</Authors>
-    <Description>Use a struct to list jobs</Description>
+    <Description>Use a struct to list MLS Listings</Description>
 
     <!-- New .Net Core v2.2 License Requirement: fixes warning NU5125 -->
     <Copyright>GPLv3</Copyright>
@@ -15,7 +15,7 @@
     <PackageTags>dotnet core</PackageTags>
     <IsPackable>true</IsPackable>
     <PackAsTool>true</PackAsTool>
-    <ToolCommandName>JobListing</ToolCommandName>
+    <ToolCommandName>MLSListing</ToolCommandName>
     <PackageOutputPath>./nupkg</PackageOutputPath>
 
   </PropertyGroup>

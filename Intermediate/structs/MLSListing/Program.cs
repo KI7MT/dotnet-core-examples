@@ -1,14 +1,14 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
- *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 MLS.Listing.dll
+ *  Target ......: netcoreapp2.0 MLSListing.dll
  *  Description..: 1). Use struct to add to listings array
  *                 2). Uses Random to generate an MLS ID
  */
 using System;
 
-namespace MLS.Listing
+namespace Beam.Example.Intermediate.MLS.Listing
 {
     class Program
     {
@@ -88,13 +88,10 @@ namespace MLS.Listing
 
             // print footer
             Console.WriteLine();
-            Console.Write(" Press Any Key to Exit ... ");
-            Console.ReadKey();
-
         }
 
         #endregion
 
-    } // END - class Program
+    } // end class Program
 
-} // END - namespace MLS.Listing
+} // end namespace Beam.Example.Intermediate.MLS.Listing
