@@ -1,13 +1,13 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
- *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 HighLowRedux.dll
+ *  Target ......: netcoreapp2.2 HighLowRedux.dll
  *  Description..: While loop for simple high-low guess game
  */
 using System;
 
-namespace Beam.Example.HighLowRedux
+namespace Beam.Example.Introductory.HighLowRedux
 {
     class Program
     {
@@ -58,12 +58,8 @@ namespace Beam.Example.HighLowRedux
             Console.WriteLine(" It took your {0} guesses", guessCount);
             Console.WriteLine();
 
-            // print footer
-            Console.WriteLine(" Press Any Key to Exit...");
-            Console.ReadKey();
+        } // end  Main Method
 
-        } // END - Main Method
+    } // end class Program
 
-    } // END - class Program
-
-} // END - namespace Beam.Example.HighLowRedux
+} // end namespace Beam.Example.Introductory.HighLowRedux
