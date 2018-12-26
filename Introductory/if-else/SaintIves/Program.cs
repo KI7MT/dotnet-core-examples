@@ -1,8 +1,8 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
- *  Copyright ...: Copyright (C) 2017 GPLv3
+ *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 SaintIves.dll
+ *  Target ......: netcoreapp2.2 SaintIves.dll
  *  Description..: Simple compounding math statements
  *  
  *  Solve the Riddle: As I was going to St. Ives, I met a man with seven wives.
@@ -12,7 +12,7 @@
  */
 using System;
 
-namespace Beam.Example.SaintIves
+namespace Beam.Example.Introductory.SaintIves
 {
     class Program
     {
@@ -35,11 +35,9 @@ namespace Beam.Example.SaintIves
             Console.WriteLine(" Kittens ..: {0}", nKittens);
             Console.WriteLine(" Total ....: {0}", nTotal);
             Console.WriteLine();
-            Console.Write(" Press Any Key To Exit...");
-            Console.ReadKey();
 
-        } // END - Main Method
+        } // end Main Method
 
-    } // END - class Program
+    } // end class Program
 
-} // END - namespace Beam.Example.SaintIves
+} // end namespace Beam.Example.Introductory.SaintIves
