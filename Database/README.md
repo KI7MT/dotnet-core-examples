@@ -15,12 +15,17 @@ server or running Redis on a different port, update the `app_config` files
 in each assembly. Likewise, the current password is set to NULL, which is the
 default installation `password`.
 
-### Install Steps
+### Windows Install Steps
 
 1. `dotnet restore`
 2. `make clean`
 3. `make pack`
 4. `make install`
+
+### Linux Install Steps
+
+1. `make`
+2. `make install`
 
 ### Running the Service and Client (both are command-line)
 
