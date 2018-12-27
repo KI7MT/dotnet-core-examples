@@ -105,9 +105,9 @@ properly, and ensuring the `Usernames and Passwords` match is key to a successfu
 
 ## Advanced Structures Methods and Classes
 
-`Advanced` applications are a combination of both [Basic Functions](#basic-functions)
-and [Intermediate](#intermediate-functions). They may also use instance classes,
-interfaces, abstracts, or more advanced
+`Advanced` applications are a combination of both [Basic](#basic-functions)
+and [Intermediate](#intermediate-functions) functions. They may also use instantiation
+of classes, interfaces, abstracts, or more advanced
 [Object Oriented Programming (OOP)](https://en.wikipedia.org/wiki/Object-oriented_programming)
 techniques.
 
