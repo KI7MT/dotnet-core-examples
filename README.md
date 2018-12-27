@@ -120,7 +120,7 @@ development to testing, will move up to [Stable for Testing Purposes](#stable-fo
 | :---        |:---|:---|:---    |:---
 |[RDaaS-API](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|PostgreSQL|TBD|Devel|Swagger RESt-API for Radio Related Data
 |[RDaaS-MVC](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|PostgreSQL|TBD|Devel|Razor WebMVC for Admin Access to RDaaS
-|[WSJTX-Data-API](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|MongoDB|TBD|Devel|Document DB for storing WSJT-X
+|[WSJTX-Data-API](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|MongoDB|TBD|Devel|Document DB for storing WSJT-X Decode Data
 |[WSJTX-Data-MVC](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|MongoDB|TBD|Devel|Angular 2 Web MVC for WSJT-X Data
 |[Rural-Fire-API](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|SQL-Server|TBD|Devel|Swagger RESt-API for County Rural Fire Management
 |[Rural-Fire-MVC](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|SQL-Server|TBD|Devel|Razor WebMVC for County Rural Fire Management
