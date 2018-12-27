@@ -13,11 +13,11 @@
 
 ## Overview
 
-This repository contains examples that you can use to test various aspects of
+The [dotnet-core-example](https://github.com/KI7MT/dotnet-core-examples) repository contains samples that you can use to test various aspects of
 [NET Core | ASP Net Core](http://dotnet.github.io). Each section `(folder)`
 contains one or more applications that should run on any number of operating
-systems and each have their own `Makefile` to facilitate: `clean`, `pack`,
-`install` and `uninstall`. Most applications can run with a simple comannd: `dotnet run`.
+systems, each having their own `Makefile` to facilitate: `clean`, `pack`,
+`install` and `uninstall`. Most applications can run with a simple command: `dotnet run`. All the sameples have been tested as [.Net Glocbal Tools](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools).
 
 The code for each application is Verbose, meaning, shortcuts and advanced
 concatenations have been kept to a minimum to allow for easier readability.
