@@ -4,9 +4,9 @@
 >queries need to be updated due to Database changes between version data-sets.
 >At present, the queries render null results.
 
-## ToDo
+## ToDo List
 
-* Full explanation of `LBService` and `LBClient` for `RedisLeaderboard`
+* Add [Docker Installation](https://docs.docker.com/docker-for-windows/install/) and basic use information with [Redis](https://docs.docker.com/samples/library/redis/)
 
 ## To run the Redis Leaderboard
 
@@ -45,32 +45,63 @@ LBClient
 1. Select Single update, or loop
 
 # To stop loop-mode, use the ESC Key. This will take a few seconds as the
-# sequence is set between 3 and 6 second updates (app.config). At the break,
+# sequence is set between 3 and 6 second updates (via app_config). At the break,
 # you will be back to the main-menu, select Q to quit.
 ```
 
-## Screen Shots
+## Screen Shots and Base Application Information
 
-A few sample shots of the RedisLeaderboard.
+### Redis Running via Docker Container
 
-#### Service Main Menu
-| ![Welcome Screen](docs/images/LBService.PNG?raw=true) |
+* Docker 5.0-Alpine Linux Image running Redis on `localhost:6379`
+* `LBService` Running in a 6sec (set in app_config) continuos update-loop
+* `LBClient` requesting updates every 3sec (set in app_config)
+* Container footprint is only ~95MB in size
+* Consoles are stand Windows CMD or Powershell
+* Alpine Linux is a `barebones` Linux instance running in a container
+* `No` system installing of Redis, nor Alpine Linux is required
+* [Docker](https://docs.docker.com/docker-for-windows/install/) is the only System-Level Installation that is required
+
+| ![Redis via Docker](docs/images/redis-via-docker.PNG?raw=true) |
 |:--:|
-| *LBService Menu* |
+| *Redis Running in Docker Container with a ~95MB Footprint* |
 
-#### LBService Looping Through Updates
+### Service Main Menu
 
-| ![Welcome Screen](docs/images/LBService-Loop-Mode.PNG?raw=true) |
+1. Populates the Redis store with an initial set of `key-value` pairs
+1. Does one round of incremental (random) numeric updates
+1. Sets the `LBService` in an continuos update-mode
+1. Cleans out (removes) the Redis store of all `key-value` pairs
+
+| ![LBService Main Menu](docs/images/LBService.PNG?raw=true) |
 |:--:|
-| *LBService in Loop Mode* |
+| *LBService Main Menu* |
+
+### LBService Looping Through Updates
+
+>COMMENT: The time in this screen shot is a bit misleading. Each round of updates
+>is read from a file `SeedList1.txt`; a random number assigned to each key; 
+>then each `key pai` is added to pipeline-push for Redis. The `entire process`
+>takes, on average, 5sec which includes Read I/O and Random Number Generation.
+
+| ![LBService Loop](docs/images/LBService-Loop-Mode.PNG?raw=true) |
+|:--:|
+| *LBService in Loop Mode Updateing 123,625 Keys* |
 
 #### LBClient Main Menu
+
+1. `LBClient` request a single update from Redis
+1. `LBClient` requests continuos updates every 3sec form Redis
 
 | ![Welcome Screen](docs/images/LBClient.PNG?raw=true) |
 |:--:|
 | *LBClient Main Menu*
 
 #### LBClient Loop Mode
+
+* Updates are set by `app_congif` before compile time.
+* After `LBService` update, Redis generates a sorted-set, grouping by the top 10 scores.
+* 1.3sec to parse 123K calls, sort them by score, and return the data
 
 | ![Welcome Screen](docs/images/LBClient-Loop-Mode.PNG?raw=true) |
 |:--:|
