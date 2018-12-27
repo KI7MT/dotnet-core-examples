@@ -27,10 +27,6 @@ The majority of the programs are a single file `(Program.cs)`, easy to use,
 and can be compiled on any operating system capable of running
 [.Net Core SDK](https://www.microsoft.com/net/learn/get-started/windows).
 
-Unless otherwise indicated, no references nor application class libraries are
-used (exceptions being `WebMVC and WebAPI`). As and when more advanced topics
-are added, this document will be updated as appropriate.
-
 All of the examples are layed out in sections `(Folder Hierarchy)`.
 While the `Database, WebMVC, and WebAPI` sections are not listed as [Advanced](#advanced),
 the examples represent some many challenging aspects of [OOP](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/object-oriented-programming) including `Dependency Injection`, `Models`, `Controllers`, `Views`, and `Database
@@ -38,7 +34,7 @@ Integration`.
 
 ## Usability
 
-At the time of this writing, all the example applications were tested on:
+At the time of this writing, all example applications were tested on:
 
 * Window-10 build 17134 x86_64
 * [Windows Subsystem Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/about)
