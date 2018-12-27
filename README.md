@@ -95,8 +95,6 @@ LBService
 make uninstall
 ```
 
-
-
 ## Database WebMVC WebAPI
 
 `Database, WebMVC, WebAPI` provides examples relating to various database
@@ -104,10 +102,27 @@ servers, web technologies, and Application Programming Interfaces (API's). As to
 classification, the examples fall into Advanced category. Setting up the Database
 properly, and ensuring the `Usernames and Passwords` match is key to a successful launch.
 
+### Stable For Testing Purposes
+
+These database applications are functional for their intended purpose. e.g. `Testing`. However, none should be considered fully production worthy.
+
 | Application |Database |DB Setup|Status|Description
 | :---        |:---|:---|:---    |:---
 |[RedisLeaderboard](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|Redis|[See Docs](https://github.com/KI7MT/jtsdk-dotnet-core/wiki/Install-Redis)|Stable|Ham Radio Contest Leaderboard Example
-|[WslNeo4J](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|Neo4J|Needs-Work|Needs-Work|Movie DB queries using Console App and Neo4j
+
+### Under Development
+
+The following applications are in various states of development, anywhere from Database Design to final API/MVC integration. The projects may reside in the
+repository, but should not be considered functional. As they move from
+development to testing, will move up to [Stable for Testing Purposes](#stable-for-testing-purposes) 
+
+|Application  |Database |DB Setup|Status|Description
+| :---        |:---|:---|:---    |:---
+|[RDaaS-API](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|PostgreSQL|TBD|Devel|Swagger RESt-API for Radio Related Data
+|[RDaaS-MVC](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|PostgreSQL|TBD|Devel|Razor WebMVC for Admin Access to RDaaS
+|[Rural-Fire-API](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|SQL-Server|TBD|Devel|Swagger RESt-API for County Rural Fire Management
+|[Rural-Fire-MVC](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|SQL-Server|TBD|Devel|Razor WebMVC for County Rural Fire Management
+|[WslNeo4J](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|Neo4J|TDB|Devel|Movie DB queries using Console App and Neo4j
 
 ## Advanced Structures Methods and Classes
 
