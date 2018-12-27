@@ -54,7 +54,7 @@ At the time of this writing, all the example applications were tested on:
 * At Least 1GB RAM
 * 1 to 2 GB of Free disk space (if running all apps, less if not)
 
->NOTE: All tools in this repository have been updated with `Makefiles` files that
+>NOTE: All tools in this repository have been updated with `Makefiles` that
 support installing each application as a [.Net Glocbal Tool](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools).
 This allows for global access to the application from anywhere within the user
 space. File install locations are as follows:
