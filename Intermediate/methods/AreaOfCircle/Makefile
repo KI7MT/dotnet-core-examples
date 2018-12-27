@@ -2,7 +2,7 @@
 #
 # Prerequsists : Microsoft Net Core SDK
 
-PROGRAM	:=	EmployeeCommissionV2
+PROGRAM	:=	AreaOfCircle
 VERSION	:=	1.0.0
 AUTHOR	:=	Greg Beam, KI7MT
 LICENSE	:=	GPLv3
