@@ -6,14 +6,29 @@
 
 ## ToDo List
 
-* Add [Docker Installation](https://docs.docker.com/docker-for-windows/install/) and basic use information with [Redis](https://docs.docker.com/samples/library/redis/)
+* Add [Docker Installation](https://docs.docker.com/docker-for-windows/install/)
+and basic use information with [Redis](https://docs.docker.com/samples/library/redis/)
 
-## To run the Redis Leaderboard
+## RedisLeaderboard Requirements
 
-Requires Redis running on default port => localhost:6379. If you have a remote
-server or running Redis on a different port, update the `app_config` files
-in each assembly. Likewise, the current password is set to NULL, which is the
-default installation `password`.
+This application requires [Redis](https://redislabs.com/) running on default 
+port => `localhost:6379`. If you have a remote server or running Redis on a
+different port, update the `app_config` files in each assembly. Likewise,
+the current password is set to NULL, which is the default installation `password`.
+
+The easiest way to test `RedisLeaderboard` is by using a [Docker Redis Server]().
+The example(s) below used a [Docker Container]() on a Win-10 x64 installation.
+
+### Installation Methods for Redis
+
+1. [Redis via Docker Container - Preferred]()
+1. [Redis via Windows Subsystem Linux - Equally as good]()
+1. [Native Linux Installaiton - Either Docker or Native install is fine]()
+
+>NOTE: Running Redis on Linux is `not` recommended ([by the Redis Development team](https://redislabs.com/ebook/appendix-a/a-3-installing-on-windows/a-3-1-drawbacks-of-redis-on-windows/)).
+>Therefore, any of the methods above would be a far better approach. If you opt for
+>installing Redis on Windows natively, expect problems in the long-term.
+
 
 ### Windows Install Steps
 
@@ -57,7 +72,7 @@ LBClient
 * `LBService` Running in a 6sec (set in app_config) continuos update-loop
 * `LBClient` requesting updates every 3sec (set in app_config)
 * Container footprint is only ~95MB in size
-* Consoles are stand Windows CMD or Powershell
+* Consoles are standard Windows CMD or Powershell
 * Alpine Linux is a `barebones` Linux instance running in a container
 * `No` system installing of Redis, nor Alpine Linux is required
 * [Docker](https://docs.docker.com/docker-for-windows/install/) is the only System-Level Installation that is required
@@ -81,8 +96,8 @@ LBClient
 
 >COMMENT: The time in this screen shot is a bit misleading. Each round of updates
 >is read from a file `SeedList1.txt`; a random number assigned to each key; 
->then each `key pai` is added to pipeline-push for Redis. The `entire process`
->takes, on average, 5sec which includes Read I/O and Random Number Generation.
+>each `key pair` is added to pipeline-push for Redis. The `entire process`
+>takes, on average, 5sec which includes Read I/O, Random Number Generation and udpates to the Redis Store.
 
 | ![LBService Loop](docs/images/LBService-Loop-Mode.PNG?raw=true) |
 |:--:|
@@ -90,7 +105,7 @@ LBClient
 
 #### LBClient Main Menu
 
-1. `LBClient` request a single update from Redis
+1. `LBClient` requests a single update from Redis
 1. `LBClient` requests continuos updates every 3sec form Redis
 
 | ![Welcome Screen](docs/images/LBClient.PNG?raw=true) |
