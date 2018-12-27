@@ -4,7 +4,7 @@
 
 * [Overview](#overview)
 * [Usability](#usability)
-* [System Requirements](#system-requirments)
+* [System Requirements](#system-requirements)
 * [Installation Using Makefiles](#installation-using-makefiles)
 * [Database, WebMVC, and WebAPI](#database-webmvc-webapi)
 * [Advanced Structures, Methods, and Classes](#advanced-structures-methods-and-classes)
