@@ -26,8 +26,13 @@ namespace Beam.Example.Introductory.SaintIves
             int nKittens = nCats * 7;
             int nTotal = nMan + nWives + nSacks + nCats + nKittens;
 
-            // print the results
-            Console.WriteLine();
+            // the puzzle
+            Console.WriteLine("\n As I was going to St. Ives, I met a man with seven wives.");
+            Console.WriteLine(" Every wife had seven sacks. Every sack had seven cats.");
+            Console.WriteLine(" Every cat had seven kittens. Kittens, cats, sacks, and");
+            Console.WriteLine(" wives, how many were going to St. Ives?\n");
+
+            // the answer
             Console.WriteLine(" Man ......: {0}", nMan);
             Console.WriteLine(" Wives ....: {0}", nWives);
             Console.WriteLine(" Sacks ....: {0}", nSacks);
