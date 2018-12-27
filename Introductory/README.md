@@ -1,23 +1,29 @@
-## Introductory .NET Core Examples
+# Introductory .NET Core Examples
 
-## How to Run Examples
+## Installation Using Makefiles
 
-In order to run the examples, you must [Install .NET Core SDK](https://www.microsoft.com/net/learn/get-started/windows).
-After that, you can clone the repository, navigate to the example folders and:
+Each application has its own `Makefile` with the commands to build, install,
+uninstall and run the application except where noted. For Windows, the file name is
+`make.cmd`. For Linux, the file name is `Makefile` without extension. In both
+cases, the invocation command is the same: `make <target>`.
 
-### Build / Run by issuing the following commands
+```shell
+# Install: In the directory you want to test, type the following
+# After install, type the name of the package you installed to execute it.
 
-* `dotnet restore`
-* `make clean`
-* `make pack`
-* `make install`
+# Windows
+make clean
+make pack
+make install
 
-The Run the command displayed after install.
+# Linux | MacOSX
+make
+make install
 
-### To Uninstall After Testing
+# Uninstall: Windows, Linux and MacOS
+make uninstall
+```
 
-* `make uninstall`
-
-### Run Without Install
+## Run Without Install
 
 * `dotnet run`
