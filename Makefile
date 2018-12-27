@@ -2,12 +2,12 @@
 #
 # Prerequsists : Microsoft Net Core SDK
 
-PROGRAM	:=	EmployeeCommissionV2
+PROGRAM	:=	Template
 VERSION	:=	1.0.0
 AUTHOR	:=	Greg Beam, KI7MT
 LICENSE	:=	GPLv3
-BUGS	:=	https://github.com/KI7MT/jtsdk-dotnet-core/issues
-WEB	:=	https://groups.io/g/JTSDK
+BUGS	:=	https://github.com/KI7MT/dotnet-core-examples/issues
+WEB	:=	https://github.com/KI7MT/dotnet-core-examples
 
 # application list
 COMMAND	:=	dotnet tool install --global --add-source

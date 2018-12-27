@@ -7,7 +7,7 @@ VERSION	:=	1.0.0
 AUTHOR	:=	Greg Beam, KI7MT
 LICENSE	:=	GPLv3
 BUGS	:=	https://github.com/KI7MT/dotnet-core-examples/issues
-WEB	:=	https://groups.io/g/dotnet-core-examples
+WEB	:=	https://github.com/KI7MT/dotnet-core-examples
 
 # application list
 APPLIST	:=	LBLibrary LBService LBClient
