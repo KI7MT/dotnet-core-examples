@@ -87,7 +87,7 @@ make install
 make
 make install
 
-# Uninstall: in the directory you installed from, type the following
+# Uninstall: Windows, Linux and MacOS
 make uninstall
 ```
 
