@@ -104,7 +104,7 @@ properly, and ensuring the `Usernames and Passwords` match is key to a successfu
 
 ### Stable For Testing Purposes
 
-These database applications are functional for their intended purpose. e.g. `Testing`. However, none should be considered fully production worthy.
+These database applications are functional for their intended purpose, e.g. `Testing`. However, none should be considered fully production worthy.
 
 | Application |Database |DB Setup|Status|Description
 | :---        |:---|:---|:---    |:---
