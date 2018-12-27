@@ -13,11 +13,11 @@
 
 ## Overview
 
-The [dotnet-core-example](https://github.com/KI7MT/dotnet-core-examples) repository contains samples that you can use to test various aspects of
+The [dotnet-core-examples](https://github.com/KI7MT/dotnet-core-examples) repository contains samples that you can use to test various aspects of
 [NET Core | ASP Net Core](http://dotnet.github.io). Each section `(folder)`
 contains one or more applications that should run on any number of operating
 systems, each having their own `Makefile` to facilitate: `clean`, `pack`,
-`install` and `uninstall`. Most applications can run with a simple command: `dotnet run`. All the sameples have been tested as [.Net Glocbal Tools](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools).
+`install` and `uninstall`. Most applications can run with a simple command: `dotnet run`. All the sameples have been tested as [.Net Global Tools](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools).
 
 The code for each application is Verbose, meaning, shortcuts and advanced
 concatenations have been kept to a minimum to allow for easier readability.
@@ -51,7 +51,7 @@ At the time of this writing, all example applications were tested on:
 * 1 to 2 GB of Free disk space (if running all apps, less if not)
 
 >NOTE: All tools in this repository have been updated with `Makefiles` that
-support installing each application as a [.Net Glocbal Tool](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools).
+support installing each application as a [.Net Global Tool](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools).
 This allows for global access to the application from anywhere within the user
 space. File install locations are as follows:
 
