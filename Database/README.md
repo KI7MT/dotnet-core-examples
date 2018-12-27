@@ -29,7 +29,6 @@ The example(s) below used a [Docker Container]() on a Win-10 x64 installation.
 >Therefore, any of the methods above would be a far better approach. If you opt for
 >installing Redis on Windows natively, expect problems in the long-term.
 
-
 ### Windows Install Steps
 
 1. `dotnet restore`
