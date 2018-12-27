@@ -2,8 +2,8 @@
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2017 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 Diamond.dll
- *  Description..: Doubble Triangle is a Diamond
+ *  Target ......: netcoreapp2.0 DoubleTriangle.dll
+ *  Description..: Double Triangle is a Diamond
  *
  *  Note: this approach uses (3) For Loops as opposed to (6). The IF statement
  *        controls counter direction (mCount) "as seen by" the two inner loops
@@ -17,7 +17,7 @@
  */
 using System;
 
-namespace beam.example.DoubbleTriangle
+namespace beam.example.DoubleTriangle
 {
     class Program
     {
