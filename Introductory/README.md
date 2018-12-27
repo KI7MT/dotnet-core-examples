@@ -8,8 +8,7 @@ uninstall and run the application except where noted. For Windows, the file name
 cases, the invocation command is the same: `make <target>`.
 
 ```shell
-# Install: In the directory you want to test, type the following
-# After install, type the name of the package you installed to execute it.
+# Install: In the directory you want to test, type the following:
 
 # Windows
 make clean
@@ -19,6 +18,15 @@ make install
 # Linux | MacOSX
 make
 make install
+
+# After install, type the name of the package you installed to execute it.
+# Example: To start LBService, type:
+
+LBService
+
+# Upon successful installation, the appropriate application name will be
+# displayed with instructions to run it.
+
 
 # Uninstall: Windows, Linux and MacOS
 make uninstall
