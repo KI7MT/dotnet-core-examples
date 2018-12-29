@@ -63,7 +63,7 @@ At the time of this writing, all example applications are being tested on:
 The following applications are in various state(s) of development, anywhere from
 Database Design to final API/MVC integration. A given project may reside in the
 repository, but should not be considered functional. As they move from
-development to testing, I will move them to Stable or Testing.
+development to testing, I will update the status to reflect the change.
 
 ## Current Testing
 
