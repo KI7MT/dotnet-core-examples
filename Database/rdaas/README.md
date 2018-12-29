@@ -163,7 +163,7 @@ If the script finishes without error, you should see the following output:
 
 ### Add Table Views
 
-This steps is similar to initialization. The difference being, we are adding
+This step is similar to initialization. The difference being, we are adding
 query views for testing.
 
 ```shell
@@ -211,30 +211,30 @@ For now, see the `view_list` matrix below for details of each view.
 
 ### View List Matrix
 
-The following are the provided views and their command to render it them. The syntax
-is the same for all elements in the view_list, with the exception of the name of the view itself. Many combinations exist for views, however the commands below simply look through each table with a select all (*) command.
+The following are the supplied views and their command to render them. The syntax
+is the same for all elements in the view_list, with the exception of the name of the view itself. Many combinations exist for views, however, the commands below simply look through each table with a select all (*) command.
 
 ### ADIF Table Views
 
 These are jsut a small sample of what's to be added, but, it's a start for
 testing basic performance.
 
-|Name          |Command
-| :---         |:---
-|Antenna Path  | psql -U postgres -c "SELECT * FROM rdaas.antenna_path_view"
-|ARRL Section  | psql -U postgres -c "SELECT * FROM rdaas.arrl_section_view"
-|Award         | psql -U postgres -c "SELECT * FROM rdaas.award_view"
-|Band          | psql -U postgres -c "SELECT * FROM rdaas.band_view"
-|Contest       | psql -U postgres -c "SELECT * FROM rdaas.contest_view"
-|Continent     | psql -U postgres -c "SELECT * FROM rdaas.continent_view"
-|County Name   | psql -U postgres -c "SELECT * FROM rdaas.county_name_view"
-|Credit        | psql -U postgres -c "SELECT * FROM rdaas.credit_view"
-|Credit Award  | psql -U postgres -c "SELECT * FROM rdaas.credit_award_view"
-|Credit Facet  | psql -U postgres -c "SELECT * FROM rdaas.credit_facet_view"
-|Credit Facet  | psql -U postgres -c "SELECT * FROM rdaas.credit_sponsor_view"
-|DXCC Entity   | psql -U postgres -c "SELECT * FROM rdaas.dxcc_entity_view"
-|State-County  | psql -U postgres -c "SELECT * FROM rdaas.state_county_view"
-|State         | psql -U postgres -c "SELECT * FROM rdaas.state_view"
+|Name           |Command
+| :---          |:---
+|Antenna Path   | psql -U postgres -c "SELECT * FROM rdaas.antenna_path_view"
+|ARRL Section   | psql -U postgres -c "SELECT * FROM rdaas.arrl_section_view"
+|Award          | psql -U postgres -c "SELECT * FROM rdaas.award_view"
+|Band           | psql -U postgres -c "SELECT * FROM rdaas.band_view"
+|Contest        | psql -U postgres -c "SELECT * FROM rdaas.contest_view"
+|Continent      | psql -U postgres -c "SELECT * FROM rdaas.continent_view"
+|County Name    | psql -U postgres -c "SELECT * FROM rdaas.county_name_view"
+|Credit         | psql -U postgres -c "SELECT * FROM rdaas.credit_view"
+|Credit Award   | psql -U postgres -c "SELECT * FROM rdaas.credit_award_view"
+|Credit Facet   | psql -U postgres -c "SELECT * FROM rdaas.credit_facet_view"
+|Credit Sponsor |psql -U postgres -c "SELECT * FROM rdaas.credit_sponsor_view"
+|DXCC Entity    | psql -U postgres -c "SELECT * FROM rdaas.dxcc_entity_view"
+|State-County   | psql -U postgres -c "SELECT * FROM rdaas.state_county_view"
+|State          | psql -U postgres -c "SELECT * FROM rdaas.state_view"
 
 ### Database Specific Views
 
