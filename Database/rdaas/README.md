@@ -5,11 +5,11 @@
 
 ## Page Index
 
-- [Overview](#overview)
-- [Usability](#usability)
-- [System Requirements](#system-requirements)
-- [Development and Environment](#development-and-environment)
-- [Current Testing](#current-testing)
+* [Overview](#overview)
+* [Usability](#usability)
+* [System Requirements](#system-requirements)
+* [Development and Environment](#development-and-environment)
+* [Current Testing](#current-testing)
   1. [Checkout Repository](#checkout-repository)
   1. [Database Initialization](#database-initialization)
   1. [Add Table Views](#add-table-views)
@@ -20,8 +20,8 @@
   1. [Database Specific Views](#database-specific-views)
   1. [Performance Checking](#performance-checking)
   1. [Update LoTW Data](#update-lotw-data)
-- [Next Phase](#next-phase)
-- [Bug Reports](#bug-reports)
+* [Next Phase](#next-phase)
+* [Bug Reports](#bug-reports)
 
 ## Overview
 
