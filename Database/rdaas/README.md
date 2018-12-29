@@ -266,7 +266,7 @@ psql -U postgres -c "explain analyze select * from rdaas.state_county_view"
 ### Update LoTW Data
 
 As most know, LoTW released their `lotw-user-activity.csv` for public consumption.
-This section shows you how `easy` it is to update the LoTW table. At present, there are over 124,000 calls in the CSV file. The query below limits to ten for the same of display.
+This section shows you how `easy` it is to update the LoTW table. At present, there are over 124,000 calls in the CSV file. The query below limits the results to ten for display purposes.
 
 ```shell
 # Change directory to lotw, and run the update
