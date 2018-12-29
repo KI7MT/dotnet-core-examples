@@ -164,15 +164,15 @@ If the script finishes without error, you should see the following output:
 ### Add Table Views
 
 This step is similar to initialization. The difference being, we are adding
-query views for testing.
+views for testing.
 
 ```shell
 psql -v ON_ERROR_STOP=1 -U postgres -f rdaas-views.sql
 ```
 
-| ![Query View Install](docs/images/query-views.PNG?raw=true) |
+| ![View Install](docs/images/query-views.PNG?raw=true) |
 |:--:|
-| *Query View Install* |
+| *View Installation* |
 
 ### Add Utility Views
 
