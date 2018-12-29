@@ -32,9 +32,9 @@ shall this section of the dotnet-core-examples.
 The conceptual components can be broken down into three basic areas during
 development, and the order of work:
 
-- Data Store (Postgresql, MongoDB, Redis, other Data Stores)
-- Application API (JSON/JSONB) RESt Endpoints
-- Web Based Interface for administration, or Web MVC.
+* Data Store (PostgreSQL, MongoDB, Redis, other Data Stores)
+* Application API (JSON/JSONB) RESt Endpoints
+* Web Based Interface for administration, or Web MVC.
 
 The current focus is on Data Storage, solidifying base models,
 draft API concepts, and measure initial performance across various host platforms.
