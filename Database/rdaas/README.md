@@ -244,7 +244,7 @@ and the revision of the RDaaS data schema.
 |Name          |Command
 | :---         |:---
 |View List     | psql -U postgres -c "SELECT * FROM rdaas.view_list"
-|Credit Facet  | psql -U postgres -c "SELECT * FROM rdaas.database_info_view"
+|Database Info | psql -U postgres -c "SELECT * FROM rdaas.database_info_view"
 |Database Size | psql -U postgres -c "SELECT * FROM rdaas.db_size_view"
 |Schema Size   | psql -U postgres -c "SELECT * FROM rdaas.schema_size_view"
 
