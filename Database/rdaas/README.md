@@ -1,0 +1,306 @@
+# RDaaS Project
+
+>NOTE: This page is under heavy revision. Expect things to change at rapid
+>pace.
+
+## Page Index
+
+- [Overview](#overview)
+- [Usability](#usability)
+- [System Requirements](#system-requirements)
+- [Development and Environment](#development-and-environment)
+- [Current Testing](#current-testing)
+  1. [Checkout Repository](#checkout-repository)
+  1. [Database Initiation](#database-initiation)
+  1. [Add Table Views](#add-table-views)
+  1. [Test Utility Scripts](#test-utility-scripts)
+  1. [List All Views](#list-all-views)
+  1. [View List Matrix](#view-list-matrix)
+  1. [ADIF Table Views](#adif-table-views)
+  1. [Database Specific Views](#database-specific-views)
+  1. [Performance Checking](#performance-checking)
+  1. [Update LoTW Data](#update-lotw-data)
+- [Next Phase](#next-phase)
+- [Bug Reports](#bug-reports)
+
+## Overview
+
+The Radio Data as a Service (RDaaS) project aims to provide radio amateurs with
+a single, scalable set of end-points for data access. As the project grows, so
+shall this section of the dotnet-core-examples repository.
+
+The conceptual components can be broken down into three basic areas during
+development, and the order of work:
+
+* Data Store (Postgresql, MongoDB, Redis, other Data Stores)
+* Application API (JSON/JSONB) RESt Endpoints
+* Web Based Interface for administration, or Web MVC.
+
+The current focus is on the Data Store and solidifying the base models
+to start working the API and looking at overall performance.
+
+## Usability
+
+At the time of this writing, all example applications are being tested on:
+
+* Window-10 build 17134 x86_64
+* [Windows Subsystem Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/about)
+* Linux Native [Ubuntu 18.04](http://releases.ubuntu.com/18.04/)
+* If the [.Net Core SDK](#system-requirments) can run on a particular system, so should RDaaS.
+
+## System Requirements
+
+* Supported Operating Systems: `Windows`, `Linux`, `MacOS`
+* [Net Core SDK v2.2+](https://dotnet.microsoft.com/download)
+* [VS Code Editor](https://code.visualstudio.com/) is optional but preferred
+* Dual Core CPU Minimum
+* At Least 1GB RAM
+* 1 to 2 GB of Free disk space (if running all apps, less if not)
+* [PostgreSQL Database](https://github.com/KI7MT/jtsdk-dotnet-core/wiki/Install-PostgreSQL)
+
+## Development and Environment
+
+The following applications are in various states of development, anywhere from
+Database Design to final API/MVC integration. The projects may reside in the
+repository, but should not be considered functional. As they move from
+development to testing, will move up to Stable for Testing Purposes.
+
+## Current Testing
+
+|Application  |Database |DB Setup|Status|Description
+| :---        |:---|:---|:---    |:---
+|[RDaaS-Data](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|PostgreSQL|[See Docs](https://github.com/KI7MT/jtsdk-dotnet-core/wiki/Install-PostgreSQL)|Testing|Database backend for the RDaaS project
+
+Currently, `SQL Database Instantiation` is the focus. In order to run the scripts,
+you must have [PostgreSQL v10+](https://github.com/KI7MT/jtsdk-dotnet-core/wiki/Install-PostgreSQL)
+installed. This can be through [JTSDK-Tools](https://github.com/KI7MT/jtsdk-dotnet-core/wiki),
+or simply a native installation for the system you are running. The Default
+installation is preferred:
+
+```shell
+
+# These are the defaults if you do not change them during installation
+
+Host.......: localhost
+Port.......: 5432
+Username...: postgres
+Password...: postgres
+Database...: postgres
+```
+
+>NOTE: If you change any of these items, you must adjust the instructions to match.
+
+## Database Instantiation
+
+In order to use `psql` you must be able to access it directly from the command
+line of a standard or `JTSK-Tools` environment. Until this works properly you
+should not continue. For all of the actions in this document, 
+I will be using `JTSDK-Tools Env`.
+
+### Psql Version Check
+
+```shell
+# Open a Terminal, Windows CMD or Powershell Console, and type:
+
+psql --version
+````
+
+| ![Psql Version](docs/images/psql-version.PNG?raw=true) |
+|:--:|
+| *psql version check* |
+
+### Checkout Repository
+
+It is your choice where you checkout the source code. To keep things consistent,
+I prefer the src directory in `JTSDK-Tools Env`.
+
+Checkout the repository, and `cd /d` to the `rdaas` folder.
+
+```shell
+# Checkout dotnet-core-examples
+
+cd /d (C|D):\JTSDK-Tools\src
+
+git clone https://github.com/KI7MT/dotnet-core-examples.git
+
+cd /d dotnet-core-examples\Database\rdaas\sql
+```
+
+### Initialize The Database
+
+In the terminal, review the available SQL Scripts, then run the main `rdaas.sql` script.
+
+```shell
+# List the *.sql scripts we'll be using
+
+#Windows:
+dir /b *.sql
+
+# Linux
+ls *.sql
+```
+
+| ![Initial Script List](docs/images/script-list1.PNG?raw=true) |
+|:--:|
+| *Initial Script List* |
+
+Run the `rdaas.sql` script using `psql` command (copy and paste should work too):
+
+>NOTE: this script drops the Schema each times it's runs. If you need or want to
+>re-initialize the DB, just run the script again. However, doing so will mean you
+must re-add the utilities and views.
+
+```shell
+psql -v ON_ERROR_STOP=1 -U postgres -f rdaas.sql
+```
+
+If the script finishes without error, you should see the following output:
+
+| ![Successful Install](docs/images/successful-install.PNG?raw=true) |
+|:--:|
+| *Successful Install* |
+
+### Add Table Views
+
+This steps is similar to initialization. The difference being, we are adding
+query views for testing.
+
+```shell
+psql -v ON_ERROR_STOP=1 -U postgres -f rdaas-views.sql
+```
+
+| ![Query View Install](docs/images/query-views.PNG?raw=true) |
+|:--:|
+| *Query View Install* |
+
+### Add Utility Views
+
+The next step we'll install some useful utility views.
+
+```shell
+# Change directories to utilities and install the views
+
+cd utilities
+
+psql -v ON_ERROR_STOP=1 -U postgres -f rdaas-utilities.sql
+```
+
+| ![Utility View Install](docs/images/utility-views.PNG?raw=true) |
+|:--:|
+| *Utility View Install* |
+
+### List All Views
+
+Now that we have the utilities installed, you can print a list of available views.
+
+```shell
+# Call the the rdaas.view_list
+
+psql -U postgres -c "SELECT * FROM rdaas.view_list"
+```
+
+| ![View List](docs/images/view-list.PNG?raw=true) |
+|:--:|
+| *View List* |
+
+As you can see in the image above, there are a number of view that that I've
+created just for testing. By the time the DB is production ready, many more
+views will potentially be created along with store procedures and other triggers.
+For now, see the `view_list` matrix below for details of each view.
+
+### View List Matrix
+
+The following lists the current views and command to render the view. The syntax
+is the same for select all elements in the view. Many combinations exist for use
+but this simply looks through each with a simple command.
+
+### ADIF Table Views
+
+These are jsut a small sample of what's to be added, but, it's a start for
+testing basic performance.
+
+|Name          |Command
+| :---         |:---
+|Antenna Path  | psql -U postgres -c "SELECT * FROM rdaas.antenna_path_view"
+|ARRL Section  | psql -U postgres -c "SELECT * FROM rdaas.arrl_section_view"
+|Award         | psql -U postgres -c "SELECT * FROM rdaas.award_view"
+|Band          | psql -U postgres -c "SELECT * FROM rdaas.band_view"
+|Contest       | psql -U postgres -c "SELECT * FROM rdaas.contest_view"
+|Continent     | psql -U postgres -c "SELECT * FROM rdaas.continent_view"
+|County Name   | psql -U postgres -c "SELECT * FROM rdaas.county_name_view"
+|Credit        | psql -U postgres -c "SELECT * FROM rdaas.credit_view"
+|Credit Award  | psql -U postgres -c "SELECT * FROM rdaas.credit_award_view"
+|Credit Facet  | psql -U postgres -c "SELECT * FROM rdaas.credit_facet_view"
+|Credit Facet  | psql -U postgres -c "SELECT * FROM rdaas.credit_sponsor_view"
+|DXCC Entity   | psql -U postgres -c "SELECT * FROM rdaas.dxcc_entity_view"
+|State-County  | psql -U postgres -c "SELECT * FROM rdaas.state_county_view"
+|State         | psql -U postgres -c "SELECT * FROM rdaas.state_view"
+
+### Database Specific Views
+
+These views are related specifically to the Database itself; size of db, schema,
+and the revision of the RDaaS data itself.
+
+|Name          |Command
+| :---         |:---
+|View List     | psql -U postgres -c "SELECT * FROM rdaas.view_list"
+|Credit Facet  | psql -U postgres -c "SELECT * FROM rdaas.database_info_view"
+|Database Size | psql -U postgres -c "SELECT * FROM rdaas.db_size_view"
+|Schema Size   | psql -U postgres -c "SELECT * FROM rdaas.schema_size_view"
+
+### Performance Checking
+
+Within any fo the views above, or any query for that matter, you can prefix the
+select statement with `EXPLAIN ANALYZE` to see the performance of the query.
+
+Example: `rdaas.state_county_view`
+
+```shell
+psql -U postgres -c "explain analyze select * from rdaas.state_county_view"
+```
+
+| ![View List](docs/images/query-plan.PNG?raw=true) |
+|:--:|
+| *View List* |
+
+### Update LoTW Data
+
+As most know, LoTW released their `lotw-user-activity.csv` for public consumption.
+This section shows you how `easy` it is to update the LoTW table.
+
+```shell
+# Change directory to lotw, and run the update
+# Note: If the update is successful, there is a "View" that will list the top
+# 15 or so callsigns
+
+cd /d (C|D):\JTSDK-Tools\src\dotnet-core-examples\Database\rdaas\sql\lotw
+
+# Run the update command:
+
+wget -c https://lotw.arrl.org/lotw-user-activity.csv
+
+# Call the LoTW Update SQL script
+
+psql -v ON_ERROR_STOP=1 -U postgres -f lotw-import.sql
+```
+
+| ![LoTW Update](docs/images/lotw-update.PNG?raw=true) |
+|:--:|
+| *LoTW Update* |
+
+## Next Phase
+
+There are many more views, queries to be added. Have a look at `pgAdmin4` that
+accompanies the installation. There are an unlimited number of actions you can do
+with `pgAdmin4`.
+
+The next steps for the database itself is to finishing adding views for the
+remaining tables, and start looking at specific user-needs for additional queris
+and functions.
+
+## Bug Reports
+
+If you have problems with setting up, or any of the steps in this brief guide,
+please file a [Bug Report](https://github.com/KI7MT/dotnet-core-examples/issues)
+on the Github Issue Tracker.
+

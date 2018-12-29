@@ -46,12 +46,13 @@ CREATE OR REPLACE VIEW rdaas.schema_size_view AS
     GROUP BY schema_name
     ORDER BY schema_name;
 
-
 \echo ''
-\echo 'Finished Creating R-DaaS Enum Database'
+\echo 'Finished Creating Utility Views'
 \echo 'Version ........: 1.0.0'
 \echo 'ADIF Spec ......: 3.0.9'
 \echo 'Report Bugs to..: https://github.com/KI7MT/dotnet-core-examples/issues'
 \echo ''
+\echo 'The following Views Are Available For Use'
+select * from rdaas.view_list;
 
--- END R-DaaS-Utility-Views.sql
+-- END rdaas-utility-views.sql
