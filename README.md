@@ -29,7 +29,7 @@ and can be compiled on any operating system capable of running
 
 All of the examples are layed out in sections `(Folder Hierarchy)`.
 While the `Database, WebMVC, and WebAPI` sections are not listed as [Advanced](#advanced),
-the examples represent some many challenging aspects of [OOP](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/object-oriented-programming) including `Dependency Injection`, `Models`, `Controllers`, `Views`, and `Database
+the examples represent many challenging aspects of [OOP](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/object-oriented-programming) including `Dependency Injection`, `Models`, `Controllers`, `Views`, and `Database
 Integration`.
 
 ## Usability
