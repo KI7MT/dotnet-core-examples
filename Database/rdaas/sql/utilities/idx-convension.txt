@@ -1,0 +1,61 @@
+Index Recommendations
+---------------------
+
+Credit: https://dba.stackexchange.com/questions/31514/how-do-i-know-what-indexes-to-create-for-a-table
+
+Index every primary key.
+Index every foreign key.
+Index every column used in a JOIN clause.
+Index every column used in a WHERE clause.
+
+
+PostgreSQL Note(s)
+------------------
+PostgreSQL automatically creates a unique index when a unique constraint or
+primary key is defined for a table. The index covers the columns that make up
+the primary key or unique constraint (a multi-column index, if appropriate), and
+is the mechanism that enforces the constraint.
+
+
+PostgreSQL Index Naming Conventions
+-----------------------------------
+
+The standard names for indexes in PostgreSQL are:
+
+{tablename}_{columnname(s)}_{suffix}
+
+    where the suffix is one of the following:
+
+        pkey    for a Primary Key constraint;
+        key     for a Unique constraint;
+        excl    for an Exclusion constraint;
+        idx     for any other kind of index;
+        fkey    for a Foreign key;
+        check   for a Check constraint;
+
+Standard suffix for sequences is
+
+    seq for all sequences
+
+
+R-DaaS FK Examples
+------------------
+
+create index state_county_county_name_id_idx on enum.state_county (county_name_id)
+create index submode_mode_id_idx on enum.submode (mode_id)
+create index credit_facet_id_idx on enum.credit (facet_id)
+create index sas_pas_id_idx on enum.sas (pas_id)
+create index state_county_state_id_idx on enum.state_county (state_id)
+create index credit_sponsor_id_idx on enum.credit (sponsor_id)
+create index submode_mode_description_id_idx on enum.submode (mode_description_id)
+create index region_dxcc_entity_id_idx on enum.region (dxcc_entity_id)
+create index credit_award_id_idx on enum.credit (award_id)
+create index pas_dxcc_entity_id_idx on enum.pas (dxcc_entity_id)
+create index mode_mode_description_id_idx on enum.mode (mode_description_id)
+create index contest_weblink_id_idx on enum.contest (weblink_id)
+create index arrl_section_dxcc_entity_id_idx on enum.arrl_section (dxcc_entity_id)
+
+
+
+
+

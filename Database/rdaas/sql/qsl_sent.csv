@@ -1,0 +1,6 @@
+id,status,meaning,description
+1,Y,yes,An outgoing QSL card has been sent. The QSO has been uploaded to and accepted by the online service.
+2,N,no,Do not send an outgoing QSL card. Do not upload the QSO to the online service.
+3,R,requested,The contacted station has requested a QSL card. The contacted station has requested the QSO be uploaded to the online service.
+4,Q,queued,An outgoing QSL card has been selected to be sent. A QSO has been selected to be uploaded to the online service
+5,I,ignore or invalid,

@@ -1,0 +1,19 @@
+id,enumeration,description
+1,AS,Aircraft Scatter
+2,AUE,Aurora-E
+3,AUR,Aurora
+4,BS,Back scatter
+5,ECH,EchoLink
+6,EME,Earth-Moon-Earth
+7,ES,Sporadic E
+8,F2,F2 Reflection
+9,FAI,Field Aligned Irregularities
+10,INTERNET,Internet-assisted
+11,ION,Ionoscatter
+12,IRL,IRLP
+13,MS,Meteor scatter
+14,RPT,Terrestrial or atmospheric repeater or transponder
+15,RS,Rain scatter
+16,SAT,Satellite
+17,TEP,Trans-equatorial
+18,TR,Tropospheric ducting
