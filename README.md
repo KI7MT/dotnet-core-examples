@@ -17,7 +17,7 @@ The [dotnet-core-examples](https://github.com/KI7MT/dotnet-core-examples) reposi
 [NET Core | ASP Net Core](http://dotnet.github.io). Each section `(folder)`
 contains one or more applications that should run on any number of operating
 systems, each having their own `Makefile` to facilitate: `clean`, `pack`,
-`install` and `uninstall`. Most applications can run with a simple command: `dotnet run`. All the sameples have been tested as [.Net Global Tools](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools).
+`install` and `uninstall`. Most applications can run with a simple command: `dotnet run`. All the samples have been tested as [.Net Global Tools](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools).
 
 The code for each application is Verbose, meaning, shortcuts and advanced
 concatenations have been kept to a minimum to allow for easier readability.
@@ -150,13 +150,14 @@ or `(Program.cs`) file.
 
 | Application |Type|Description
 | :---        |:---|:---
-|[AreaOfCircle](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate)|methods|Use methods to calc the Area of a Circle
-|[AreaOfTriangle](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate)|methods|Use methods to calc the Area of a Triangle
-|[CalculatePay](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate)|methods|Use methods to calculate Gross Pay
-|[InchesToCentimeters](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate)|methods|Use methods to Convert In. to Cn.
-|[VolumeOfCylinder](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate)|methods|Use methods to calc the Volume of a Cylinder
-|[JobListing](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate)|struct|Use struct to generate job postings
-|[MSLListing](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate)|struct|Use struct to add to listings array and MLS IDs
+|[AreaOfCircle](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate/methods)|methods|Use methods to calc the Area of a Circle
+|[AreaOfTriangle](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate/methods)|methods|Use methods to calc the Area of a Triangle
+|[CalculatePay](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate/methods)|methods|Use methods to calculate Gross Pay
+|[InchesToCentimeters](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate/methods)|methods|Use methods to Convert In. to Cn.
+|[VolumeOfCylinder](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate/methods)|methods|Use methods to calc the Volume of a Cylinder
+|[JobListing](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate/struct)|struct|Use struct to generate job postings
+|[MSLListing](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate/struct)|struct|Use struct to add to listings array and MLS IDs
+|[RandGen](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate)|struct|Advanced Password generator with user input options
 
 ## Basic Functions
 
