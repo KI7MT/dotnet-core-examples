@@ -294,7 +294,7 @@ There are many more views and queries to be added. Have a look at `pgAdmin4` tha
 accompanies the installation. There are an unlimited number of actions you can do
 with `pgAdmin4`.
 
-The next steps for the database itself is to finish adding views for the
+The next step for the database itself is to finish adding views for the
 remaining tables, then start looking at specific user-need queries and functions.
 
 ## Bug Reports
