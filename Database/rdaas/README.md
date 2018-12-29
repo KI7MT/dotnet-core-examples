@@ -11,7 +11,7 @@
 - [Development and Environment](#development-and-environment)
 - [Current Testing](#current-testing)
   1. [Checkout Repository](#checkout-repository)
-  1. [Database Initiation](#database-initiation)
+  1. [Database Initialization](#database-initialization)
   1. [Add Table Views](#add-table-views)
   1. [Test Utility Scripts](#test-utility-scripts)
   1. [List All Views](#list-all-views)
@@ -60,21 +60,23 @@ At the time of this writing, all example applications are being tested on:
 
 ## Development and Environment
 
-The following applications are in various states of development, anywhere from
-Database Design to final API/MVC integration. The projects may reside in the
+The following applications are in various state(s) of development, anywhere from
+Database Design to final API/MVC integration. A given project may reside in the
 repository, but should not be considered functional. As they move from
-development to testing, will move up to Stable for Testing Purposes.
+development to testing, I will move them to Stable or Testing.
 
 ## Current Testing
 
 |Application  |Database |DB Setup|Status|Description
 | :---        |:---|:---|:---    |:---
 |[RDaaS-Data](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|PostgreSQL|[See Docs](https://github.com/KI7MT/jtsdk-dotnet-core/wiki/Install-PostgreSQL)|Testing|Database backend for the RDaaS project
+|[RDaaS-API](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|PostgreSQL|TBD|Devel|Swagger RESt-API for Radio Related Data
+|[RDaaS-MVC](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|PostgreSQL|TBD|Devel|Razor WebMVC for Admin Access to RDaaS
 
-Currently, `SQL Database Instantiation` is the focus. In order to run the scripts,
+Currently, `Database Initialization` is the focus. In order to run the SQL scripts,
 you must have [PostgreSQL v10+](https://github.com/KI7MT/jtsdk-dotnet-core/wiki/Install-PostgreSQL)
 installed. This can be through [JTSDK-Tools](https://github.com/KI7MT/jtsdk-dotnet-core/wiki),
-or simply a native installation for the system you are running. The Default
+or a native installation for the system you are running. The Default
 installation is preferred:
 
 ```shell
@@ -90,17 +92,16 @@ Database...: postgres
 
 >NOTE: If you change any of these items, you must adjust the instructions to match.
 
-## Database Instantiation
+## Database Initialization
 
-In order to use `psql` you must be able to access it directly from the command
-line of a standard or `JTSK-Tools` environment. Until this works properly you
-should not continue. For all of the actions in this document, 
+In order to use `psql`, you must be able to access it directly from the command-line. This can be a native console or `JTSK-Tools` environment. Until this works properly, you
+should not continue. For all of actions in this document,
 I will be using `JTSDK-Tools Env`.
 
 ### Psql Version Check
 
 ```shell
-# Open a Terminal, Windows CMD or Powershell Console, and type:
+# Open a Terminal, Windows CMD, Powershell, Linux Terminal and type:
 
 psql --version
 ````
@@ -133,7 +134,7 @@ In the terminal, review the available SQL Scripts, then run the main `rdaas.sql`
 ```shell
 # List the *.sql scripts we'll be using
 
-#Windows:
+# Windows:
 dir /b *.sql
 
 # Linux
@@ -203,16 +204,15 @@ psql -U postgres -c "SELECT * FROM rdaas.view_list"
 |:--:|
 | *View List* |
 
-As you can see in the image above, there are a number of view that that I've
+As you can see in the image above, there are a number of views I've
 created just for testing. By the time the DB is production ready, many more
-views will potentially be created along with store procedures and other triggers.
+views will be created along with store procedures and other triggers.
 For now, see the `view_list` matrix below for details of each view.
 
 ### View List Matrix
 
-The following lists the current views and command to render the view. The syntax
-is the same for select all elements in the view. Many combinations exist for use
-but this simply looks through each with a simple command.
+The following are the provided views and their command to render it them. The syntax
+is the same for all elements in the view_list, with the exception of the name of the view itself. Many combinations exist for views, however the commands below simply look through each table with a select all (*) command.
 
 ### ADIF Table Views
 
@@ -238,8 +238,8 @@ testing basic performance.
 
 ### Database Specific Views
 
-These views are related specifically to the Database itself; size of db, schema,
-and the revision of the RDaaS data itself.
+These views are related to the Database itself; size of db, schema,
+and the revision of the RDaaS data schema.
 
 |Name          |Command
 | :---         |:---
@@ -250,7 +250,7 @@ and the revision of the RDaaS data itself.
 
 ### Performance Checking
 
-Within any fo the views above, or any query for that matter, you can prefix the
+Within any of the views above, or any query for that matter, you can prefix the
 select statement with `EXPLAIN ANALYZE` to see the performance of the query.
 
 Example: `rdaas.state_county_view`
@@ -270,8 +270,8 @@ This section shows you how `easy` it is to update the LoTW table.
 
 ```shell
 # Change directory to lotw, and run the update
-# Note: If the update is successful, there is a "View" that will list the top
-# 15 or so callsigns
+# Note: If the update is successful, "View" will list the top
+# 15 or so callsigns according to date and time DESC
 
 cd /d (C|D):\JTSDK-Tools\src\dotnet-core-examples\Database\rdaas\sql\lotw
 
@@ -290,17 +290,16 @@ psql -v ON_ERROR_STOP=1 -U postgres -f lotw-import.sql
 
 ## Next Phase
 
-There are many more views, queries to be added. Have a look at `pgAdmin4` that
+There are many more views and queries to be added. Have a look at `pgAdmin4` that
 accompanies the installation. There are an unlimited number of actions you can do
 with `pgAdmin4`.
 
-The next steps for the database itself is to finishing adding views for the
-remaining tables, and start looking at specific user-needs for additional queris
-and functions.
+The next steps for the database itself is to finish adding views for the
+remaining tables, then start looking at specific user-need queries and functions.
 
 ## Bug Reports
 
-If you have problems with setting up, or any of the steps in this brief guide,
+If you have problems with setting things up, or any of the steps in this brief guide,
 please file a [Bug Report](https://github.com/KI7MT/dotnet-core-examples/issues)
 on the Github Issue Tracker.
 
