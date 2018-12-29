@@ -26,7 +26,7 @@
 ## Overview
 
 The Radio Data as a Service (RDaaS) project aims to provide radio amateurs with
-a single, scalable set of end-points for data access. As the project grows, so
+a scalable set of end-points for data access. As the project grows, so
 shall this section of the dotnet-core-examples.
 
 The conceptual components can be broken down into three basic areas during
