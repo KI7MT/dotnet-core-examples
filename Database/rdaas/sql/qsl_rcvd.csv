@@ -1,6 +1,0 @@
-id,status,meaning,import_only,description
-1,Y,yes (confirmed),f,An incoming QSL card has been received.  The QSO has been confirmed by the online service
-2,N,no,f,An incoming QSL. card has not been received. The QSO has not been confirmed by the online service
-3,R,requested,f,The logging station has requested a QSL card. The logging station has requested the QSO be uploaded to the online service
-4,I,ignore or invalid,f,
-5,V,verified,t,DXCC award credit granted for the QSL card - instead use. DXCC credit granted for the LoTW confirmation - instead use

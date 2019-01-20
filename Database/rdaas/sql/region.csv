@@ -1,9 +1,0 @@
-id,code,dxcc_entity_id,region,prefix
-1,NONE,,Not within a WAE or CQ region that is within a DXCC entity,
-2,IV,206,ITU Vienna,4U1V
-3,AI,248,African Italy,IG9
-4,SY,248,Sicily,IT9
-5,BI,259,Bear island,JW/B
-6,SI,279,Shetland Islands,GM/S
-7,KO,296,Kosovo,ZS6
-8,ET,390,European Turkey,TA1
