@@ -2,7 +2,7 @@
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.2 AverageNumbers.dll
+ *  Target ......: net8.0 AverageNumbers.dll
  *  Description..: Average a series of Even and Odd numbers
  */
 using System;

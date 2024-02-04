@@ -2,7 +2,7 @@
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.2 IncrementBy.dll
+ *  Target ......: net8.0 IncrementBy.dll
  *  Description..: While loop that increments by x
  */
 using System;

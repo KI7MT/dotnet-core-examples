@@ -2,7 +2,7 @@
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.2 StackSame.dll
+ *  Target ......: net8.0 StackSame.dll
  *  Description..: For Loop Stack Same Numbers Across
  */
 using System;

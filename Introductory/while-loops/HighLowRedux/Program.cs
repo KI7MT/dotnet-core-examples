@@ -2,7 +2,7 @@
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.2 HighLowRedux.dll
+ *  Target ......: net8.0 HighLowRedux.dll
  *  Description..: While loop for simple high-low guess game
  */
 using System;

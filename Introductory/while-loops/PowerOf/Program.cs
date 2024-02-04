@@ -2,7 +2,7 @@
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.2 PowerOf.dll
+ *  Target ......: net8.0 PowerOf.dll
  *  Description..: While loop that calculates powers of 10  for x < <= 10
  */
 using System;

@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Authors>Greg Beam, KI7MT</Authors>
     <Description>Determine the suffix for a given integer 1 to 1000.</Description>
 

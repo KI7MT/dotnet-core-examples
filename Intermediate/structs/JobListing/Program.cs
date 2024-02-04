@@ -2,7 +2,7 @@
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.2 JobListing.dll
+ *  Target ......: net8.0 JobListing.dll
  *  Description..: 1). Use Two Struct to generate job postings
  *                 2). Uses Random to generate Job ID's
  */
