@@ -167,8 +167,8 @@ or `(Program.cs`) file.
 
 ## Advanced Structures Methods and Classes
 
-`Advanced` applications are a combination of both [Basic](#basic-functions)
-and [Intermediate](#intermediate-functions) functions. They may also use instantiation
+`Advanced` applications are a combination of both [Basic](#introductory-logic-conditions-loops)
+and [Intermediate](#intermediate-structures-methods-and-functions) functions. They may also use instantiation
 of classes, interfaces, abstracts, or more advanced
 [Object Oriented Programming (OOP)](https://en.wikipedia.org/wiki/Object-oriented_programming)
 techniques.
