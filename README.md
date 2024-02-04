@@ -1,7 +1,5 @@
 # .NET Core Examples
 
-## Page Index
-
 - [Overview](#overview)
 - [Usability](#usability)
 - [System Requirements](#system-requirements)
