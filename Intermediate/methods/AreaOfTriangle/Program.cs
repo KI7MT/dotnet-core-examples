@@ -1,8 +1,8 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2018 GPLv3
- *  Level .......: Basic
- *  Target ......: netcoreapp2.0 AreaOfTriangle.dll
+ *  Level .......: Intermediate
+ *  Target ......: net8.0 AreaOfTriangle.dll
  *  Description..: Uses a method outside of Main to perform a calculation
  */
 using System;

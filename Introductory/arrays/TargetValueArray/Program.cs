@@ -2,7 +2,7 @@
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2018 GPLv3
  *  Level .......: Basic
- *  Target ......: netcoreapp2.0 TargetValueArray.dll
+ *  Target ......: net8.0 TargetValueArray.dll
  *  Description..: 1). Enter 10 values into an array
  *                 2). Count the number of times the target appears in the array
  */

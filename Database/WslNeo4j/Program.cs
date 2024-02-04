@@ -2,7 +2,7 @@
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2017 GPLv3
  *  Level .......: Advanced
- *  Target ......: netcoreapp2.0 WslNeo4j.dll
+ *  Target ......: net8.0 WslNeo4j.dll
  *  Description..: Movie query using WSL and Neo4j
  *  Requires ....: Neo4j Client package
  *                 Neo4j Driver package

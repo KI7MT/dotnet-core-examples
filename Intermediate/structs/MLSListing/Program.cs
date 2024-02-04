@@ -1,8 +1,8 @@
 ﻿/* 
  *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
  *  Copyright ...: Copyright (C) 2018 GPLv3
- *  Level .......: Basic
- *  Target ......: netcoreapp2.0 MLSListing.dll
+ *  Level .......: Intermediate
+ *  Target ......: net8.0 MLSListing.dll
  *  Description..: 1). Use struct to add to listings array
  *                 2). Uses Random to generate an MLS ID
  */
