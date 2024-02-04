@@ -2,14 +2,15 @@
 
 ## Page Index
 
-* [Overview](#overview)
-* [Usability](#usability)
-* [System Requirements](#system-requirements)
-* [Installation Using Makefiles](#installation-using-makefiles)
-* [Database, WebMVC, and WebAPI](#database-webmvc-webapi)
-* [Advanced Structures, Methods, and Classes](#advanced-structures-methods-and-classes)
-* [Intermediate](#intermediate-functions)
-* [Basic Functions](#basic-functions)
+- [Overview](#overview)
+- [Usability](#usability)
+- [System Requirements](#system-requirements)
+- [Installation Using Makefiles](#installation-using-makefiles)
+- [Introductory Logic, Conditions, Loops](#introductory-logic-conditions-loops)
+- [Intermediate Structures, Methods and Functions](#intermediate-structures-methods-and-functions)
+- [Advanced Structures, Methods, and Classes](#advanced-structures-methods-and-classes)
+- [Redis Leaderboard Stable For Testing Purposes](#redis-leaderboard-stable-for-testing-purposes)
+- [WSL Neo4J Stable For Testing Purposes](#wsl-neo4j-stable-for-testing-purposes) 
 
 ## Overview
 
@@ -44,7 +45,7 @@ At the time of this writing, all example applications were tested on:
 ## System Requirements
 
 * Supported Operating Systems: `Windows`, `Linux`, `MacOS`
-* [Net Core SDK v2.2+](https://dotnet.microsoft.com/download)
+* [Net Core SDK v8.0](https://dotnet.microsoft.com/download)
 * [VS Code Editor](https://code.visualstudio.com/) is optional but preferred
 * Dual Core CPU Minimum
 * At Least 1GB RAM
@@ -74,9 +75,9 @@ cases, the invocation command is the same: `make <target>`.
 # Install: In the directory you want to test, type the following:
 
 # Windows
-make clean
-make pack
-make install
+.\make.cmd clean
+.\make.cmd pack
+.\make.cmd install
 
 # Linux | MacOSX
 make
@@ -91,70 +92,17 @@ LBService
 # displayed with instructions to run it.
 
 
-# Uninstall: Windows, Linux and MacOS
+# Uninstall: Windows
+.\make.cmd uninstall
+.\make.cmd clean
+
+# Uninstall: Linux MacOS
 make uninstall
+make clean
 ```
 
-## Database WebMVC WebAPI
 
-`Database, WebMVC, WebAPI` provides examples relating to various database
-servers, web technologies, and Application Programming Interfaces (API's). As to their
-classification, the examples fall into Advanced category. Setting up the Database
-properly, and ensuring the `Usernames and Passwords` match is key to a successful launch.
-
-### Stable For Testing Purposes
-
-These database applications are functional for their intended purpose, e.g. `Testing`. However, none should be considered fully production worthy.
-
-| Application |Database |DB Setup|Status|Description
-| :---        |:---|:---|:---    |:---
-|[RedisLeaderboard](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|Redis|[See Docs](https://github.com/KI7MT/jtsdk-dotnet-core/wiki/Install-Redis)|Stable|Ham Radio Contest Leaderboard Example
-
-### Under Development
-
-The following applications are in various states of development, anywhere from Database Design to final API/MVC integration. The projects may reside in the
-repository, but should not be considered functional. As they move from
-development to testing, will move up to [Stable for Testing Purposes](#stable-for-testing-purposes) 
-
-|Application  |Database |DB Setup|Status|Description
-| :---        |:---|:---|:---    |:---
-|[Rural-Fire-API](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|SQL-Server|TBD|Devel|Swagger RESt-API for County Rural Fire Management
-|[Rural-Fire-MVC](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|SQL-Server|TBD|Devel|Razor WebMVC for County Rural Fire Management
-|[WslNeo4J](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|Neo4J|TDB|Devel|Movie DB queries using Console App and Neo4j
-
-## Advanced Structures Methods and Classes
-
-`Advanced` applications are a combination of both [Basic](#basic-functions)
-and [Intermediate](#intermediate-functions) functions. They may also use instantiation
-of classes, interfaces, abstracts, or more advanced
-[Object Oriented Programming (OOP)](https://en.wikipedia.org/wiki/Object-oriented_programming)
-techniques.
-
-| Application |Type|Description
-| :---        |:---|:---
-|[EmployeeCommissionV1](https://github.com/KI7MT/dotnet-core-examples/tree/master/Advanced) |various |Calculate commission for one or more employee's
-|[EmployeeCommissionV2](https://github.com/KI7MT/dotnet-core-examples/tree/master/Advanced) |various |Uses: Struct, Array of Struct, if-else, loops and methods
-|[TikTakToe](https://github.com/KI7MT/dotnet-core-examples/tree/master/Advanced)|various|Game: uses 2D Arrays, if-else, loops, methods, and colors
-
-## Intermediate Functions
-
-`Intermediate` employs things such as [structures](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/struct),
-and [methods](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/methods)
-outside of the [main method](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/hello-world-your-first-program)
-or `(Program.cs`) file.
-
-| Application |Type|Description
-| :---        |:---|:---
-|[AreaOfCircle](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate/methods)|methods|Use methods to calc the Area of a Circle
-|[AreaOfTriangle](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate/methods)|methods|Use methods to calc the Area of a Triangle
-|[CalculatePay](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate/methods)|methods|Use methods to calculate Gross Pay
-|[InchesToCentimeters](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate/methods)|methods|Use methods to Convert In. to Cn.
-|[VolumeOfCylinder](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate/methods)|methods|Use methods to calc the Volume of a Cylinder
-|[JobListing](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate/struct)|struct|Use struct to generate job postings
-|[MSLListing](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate/struct)|struct|Use struct to add to listings array and MLS IDs
-|[RandGen](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate)|struct|Advanced Password generator with user input options
-
-## Basic Functions
+## Introductory Logic, Conditions, Loops
 
 `Basic Functions` employ things such as [Arrays](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/),
 [for-loops](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/for),
@@ -200,3 +148,51 @@ file. Typically, no other classes are involved apart basic from
 |[PowerOff](https://github.com/KI7MT/dotnet-core-examples/tree/master/Introductory/while-loops)|while-loops|Loop that calculates powers of 10 for x < <= 10
 
 
+## Intermediate Structures, Methods and Functions
+
+`Intermediate` employs things such as [structures](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/struct),
+and [methods](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/methods)
+outside of the [main method](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/hello-world-your-first-program)
+or `(Program.cs`) file.
+
+| Application |Type|Description
+| :---        |:---|:---
+|[AreaOfCircle](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate/methods)|methods|Use methods to calc the Area of a Circle
+|[AreaOfTriangle](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate/methods)|methods|Use methods to calc the Area of a Triangle
+|[CalculatePay](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate/methods)|methods|Use methods to calculate Gross Pay
+|[InchesToCentimeters](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate/methods)|methods|Use methods to Convert In. to Cn.
+|[VolumeOfCylinder](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate/methods)|methods|Use methods to calc the Volume of a Cylinder
+|[JobListing](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate/struct)|struct|Use struct to generate job postings
+|[MSLListing](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate/struct)|struct|Use struct to add to listings array and MLS IDs
+|[RandGen](https://github.com/KI7MT/dotnet-core-examples/tree/master/Intermediate)|struct|Advanced Password generator with user input options
+
+## Advanced Structures Methods and Classes
+
+`Advanced` applications are a combination of both [Basic](#basic-functions)
+and [Intermediate](#intermediate-functions) functions. They may also use instantiation
+of classes, interfaces, abstracts, or more advanced
+[Object Oriented Programming (OOP)](https://en.wikipedia.org/wiki/Object-oriented_programming)
+techniques.
+
+| Application |Type|Description
+| :---        |:---|:---
+|[EmployeeCommissionV1](https://github.com/KI7MT/dotnet-core-examples/tree/master/Advanced) |various |Calculate commission for one or more employee's
+|[EmployeeCommissionV2](https://github.com/KI7MT/dotnet-core-examples/tree/master/Advanced) |various |Uses: Struct, Array of Struct, if-else, loops and methods
+|[TikTakToe](https://github.com/KI7MT/dotnet-core-examples/tree/master/Advanced)|various|Game: uses 2D Arrays, if-else, loops, methods, and colors
+
+## Redis Leaderboard Stable For Testing Purposes
+
+This application is functional for it's intended purpose, e.g. `Testing`. However, it should not be considered production worthy.
+
+| Application |Database |DB Setup|Status|Description
+| :---        |:---|:---|:---    |:---
+|[RedisLeaderboard](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|Redis|[See Docs](https://github.com/KI7MT/jtsdk-dotnet-core/wiki/Install-Redis)|Stable|Ham Radio Contest Leaderboard Example
+
+
+## WSL Neo4J Stable For Testing Purposes
+
+This application is functional for it's intended purpose, e.g. `Testing`. However, none should not be considered production worthy.
+
+|Application  |Database |DB Setup|Status|Description
+| :---        |:---|:---|:---    |:---
+|[WslNeo4J](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|Neo4J|TDB|Devel|Movie DB queries using Console App and Neo4j
