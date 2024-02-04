@@ -35,9 +35,10 @@ Integration`.
 
 At the time of this writing, all example applications were tested on:
 
-* Window-10 build 17134 x86_64
+* Oracle Linux 7 an 8
+* Windows 11 Pro 23H2 22631.3007
 * [Windows Subsystem Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/about)
-* Linux Native [Ubuntu 18.04](http://releases.ubuntu.com/18.04/)
+* Linux Native [Ubuntu 22.04](http://releases.ubuntu.com/22.04/)
 * If the [.Net Core SDK](#system-requirments) can run on a particular system, so should the examples.
 
 ## System Requirements
