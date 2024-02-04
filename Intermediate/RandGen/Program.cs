@@ -1,13 +1,16 @@
-﻿using System;
+﻿/* 
+ *  Author ......: Greg, Beam, KI7MT, <ki7mt@yahoo.com>
+ *  Copyright ...: Copyright (C) 2018 GPLv3, GNU Free Document License 1.3 2024
+ *  Level .......: Intermediate
+ *  Target ......: net8.0 VolumeOfCylinder.dll
+ *  Credit ......: https://rosettacode.org/wiki/Password_generator#C.23
+ *  Description..: Uses a methods to perform random pw generation
+ */
+using System;
 using System.Linq;
 
 namespace RandGen
 {
-    /// <summary>
-    /// Randome number, letter, symbol, combination generator
-    /// Credit: https://rosettacode.org/wiki/Password_generator#C.23
-    /// Packaged by: Greg Beam, KI7MT 
-    /// </summary>
     public class Program
     {
         const string Lower = "abcdefghijklmnopqrstuvwxyz";
@@ -21,10 +24,7 @@ namespace RandGen
         static Random _rng = new Random();
         static string[] _symbolSet = Full;
 
-        /// <summary>
-        /// Main method to generates number-letter-symbol combinations
-        /// </summary>
-        /// <param name="args">-l:x -c:x -s:x -x:x</param>
+        // main method
         static void Main(string[] args)
         {
             int length = 12, count = 1;
@@ -51,9 +51,7 @@ namespace RandGen
             catch (Exception ex) { Console.WriteLine("Error: " + ex.Message); }
         } // end main method
 
-        /// <summary>
-        /// Show usage message
-        /// </summary>
+        // usage method
         static void ShowUsage()
         {
             Console.WriteLine("\nUsage: RanGen [-l:length] [-c:count] [-s:seed] [-x:(true|false)]\n");
@@ -64,11 +62,7 @@ namespace RandGen
             Console.WriteLine("\nExample: RanGen -l:10 -c:5 -s:\"Sample Seed\" -x:true\n");
         } // end show usage
 
-        /// <summary>
-        /// Method to generate string combinations
-        /// </summary>
-        /// <param name="length">length of string to be generated</param>
-        /// <returns></returns>
+        // work generator
         static string GenerateWord(int length)
         {
             var minLength = _symbolSet.Length - 1;
