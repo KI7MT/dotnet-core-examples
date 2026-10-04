@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="Neo4j.Driver" Version="1.5.2" />
-    <PackageReference Include="Neo4jClient" Version="2.0.0.10" />
+    <PackageReference Include="Neo4jClient" Version="5.1.20" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
