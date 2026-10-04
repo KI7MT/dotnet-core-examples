@@ -16,6 +16,18 @@ and basic use information with [Redis](https://docs.docker.com/samples/library/r
 
 ## RedisLeaderboard Requirements
 
+> **Redis client (October 2026).** This example now uses
+> [StackExchange.Redis](https://github.com/StackExchange/StackExchange.Redis), the de facto .NET
+> Redis client, under the MIT licence. It previously used `ServiceStack.Redis.Core`, which is
+> AGPLv3 and — since ServiceStack v4 — meters free use at **6,000 Redis requests per hour**. A demo
+> whose whole point is a continuous update loop over 123,625 keys is the wrong place for a request
+> ceiling that throws at runtime.
+>
+> `ConnectionMultiplexer` is created once and shared, as its documentation requires, rather than a
+> client per operation. Pipelining is now `IBatch`; sorted-set reads are
+> `SortedSetRangeByRankWithScores`.
+
+
 This application requires [Redis](https://redislabs.com/) running on default 
 port => `localhost:6379`. If you have a remote server or running Redis on a
 different port, update the `app_config` files in each assembly. Likewise,

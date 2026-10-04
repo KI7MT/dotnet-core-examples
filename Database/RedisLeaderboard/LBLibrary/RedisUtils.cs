@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 using System.Configuration;
-using ServiceStack.Redis;
+using StackExchange.Redis;
 
 namespace LBLibrary
 {
@@ -27,32 +27,54 @@ namespace LBLibrary
 
         #region Redis Hostname, Port, Password via AppConfig
 
-        /// <summary>
-        /// Redis Server Host Name via app.config
-        /// </summary>
         public static string SeverHostName => ConfigurationManager.AppSettings["RedisHost"];
-
-        /// <summary>
-        /// Redis Server Port Number via app.config
-        /// </summary>
         public static int ServerPortNumber => Convert.ToInt32(ConfigurationManager.AppSettings["RedisPort"]);
-
-        /// <summary>
-        /// Redis Server Passowrd via app.config
-        /// </summary>
         public static string ServerPassword => ConfigurationManager.AppSettings["RedisPassword"];
 
         #endregion
 
-        #region IRedisNativeClient
+        #region Connection
 
-        public IRedisNativeClient GetNativeClient() => new RedisNativeClient(host, port, pw);
+        //---------------------------------------------------------------------
+        // ConnectionMultiplexer is designed to be shared and re-used: one per
+        // process, not one per call. It multiplexes every command down a single
+        // connection, so creating one per operation is both slower and a leak.
+        private static ConnectionMultiplexer connection;
+        private static readonly object connectionLock = new object();
+
+        public ConnectionMultiplexer GetConnection()
+        {
+            if (connection != null && connection.IsConnected) { return connection; }
+
+            lock (connectionLock)
+            {
+                if (connection == null || !connection.IsConnected)
+                {
+                    var options = new ConfigurationOptions
+                    {
+                        EndPoints = { { host, port } },
+                        Password = string.IsNullOrEmpty(pw) ? null : pw,
+                        AbortOnConnectFail = false,
+                        AllowAdmin = true   // required for FlushDatabase
+                    };
+
+                    connection = ConnectionMultiplexer.Connect(options);
+                }
+            }
+
+            return connection;
+        }
 
         #endregion
 
-        #region IRedisClient
+        #region IDatabase and IServer
 
-        public IRedisClient GetClient() => new RedisClient(host, port, pw);
+        //---------------------------------------------------------------------
+        // IDatabase is where commands are issued. IServer is only needed for
+        // server-wide operations such as flushing.
+        public IDatabase GetDatabase() => GetConnection().GetDatabase();
+
+        public IServer GetServer() => GetConnection().GetServer(host, port);
 
         #endregion
 
