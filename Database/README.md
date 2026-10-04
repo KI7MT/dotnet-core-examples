@@ -1,8 +1,13 @@
 ## Database .NET Core Examples
 
->NOTE: RedisLeaderboard is fully functional and rendering properly. Neo4J, however,
->queries need to be updated due to Database changes between version data-sets.
->At present, the queries render null results.
+>NOTE: RedisLeaderboard is fully functional and rendering properly.
+>
+>The `WslNeo4j` example was retired in October 2026. It queried Neo4j's sample Movies
+>dataset two ways — a typed client and the raw driver — but connected over
+>`http://localhost:7474/db/data`, the REST API that Neo4j deprecated in 3.4 and removed
+>in 4.0. No supported Neo4j server exposes it, and the code imported `Neo4j.Driver.V1`,
+>a namespace that no longer exists. Restoring it would mean rewriting against `bolt://`
+>and a current driver rather than updating a version. It remains in the git history.
 
 ## ToDo List
 
