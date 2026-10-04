@@ -1,0 +1,20 @@
+# Nothing watched these packages before, which is why a 2017 version of
+# Newtonsoft.Json sat here with a published CVE against it. Monthly is enough
+# for a teaching repository: it surfaces drift without generating noise.
+version: 2
+updates:
+  - package-ecosystem: nuget
+    directories:
+      - "/**/*"
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: "deps"
+
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: "ci"

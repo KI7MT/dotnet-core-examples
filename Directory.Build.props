@@ -1,0 +1,18 @@
+<Project>
+
+  <!--
+    The target framework is declared ONCE, here, and inherited by every project.
+    Moving to a future release is a one-line change rather than an edit to each
+    of the 47 project files.
+
+    .NET 10 is the current Long Term Support release, supported to November 2028.
+    .NET 8 reached end of support on 10 November 2026.
+  -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+</Project>

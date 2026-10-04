@@ -1,7 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
     <Authors>Greg Beam, KI7MT</Authors>
     <Description>Redis Leaderboad Library</Description>
 
