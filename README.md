@@ -8,7 +8,6 @@
 - [Intermediate Structures, Methods and Functions](#intermediate-structures-methods-and-functions)
 - [Advanced Structures, Methods, and Classes](#advanced-structures-methods-and-classes)
 - [Redis Leaderboard Stable For Testing Purposes](#redis-leaderboard-stable-for-testing-purposes)
-- [WSL Neo4J Stable For Testing Purposes](#wsl-neo4j-stable-for-testing-purposes) 
 
 ## Overview
 
@@ -204,12 +203,3 @@ This application is functional for it's intended purpose, e.g. `Testing`. Howeve
 | Application |Database |DB Setup|Status|Description
 | :---        |:---|:---|:---    |:---
 |[RedisLeaderboard](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|Redis|[See Docs](https://github.com/KI7MT/jtsdk-dotnet-core/wiki/Install-Redis)|Stable|Ham Radio Contest Leaderboard Example
-
-
-## WSL Neo4J Stable For Testing Purposes
-
-This application is functional for it's intended purpose, e.g. `Testing`. However, none should not be considered production worthy.
-
-|Application  |Database |DB Setup|Status|Description
-| :---        |:---|:---|:---    |:---
-|[WslNeo4J](https://github.com/KI7MT/dotnet-core-examples/tree/master/Database)|Neo4J|TDB|Devel|Movie DB queries using Console App and Neo4j
