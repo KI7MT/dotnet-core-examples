@@ -1,20 +1,34 @@
-# Nothing watched these packages before, which is why a 2017 version of
-# Newtonsoft.Json sat here with a published CVE against it. Monthly is enough
-# for a teaching repository: it surfaces drift without generating noise.
+# Only three projects carry NuGet packages, all of them in the Redis leaderboard.
+# They are named explicitly: an earlier "/**/*" glob matched the same project
+# through several paths and opened the same bump four times.
+#
+# Updates are grouped, so a round of version bumps arrives as one pull request
+# per ecosystem rather than one per package per project.
 version: 2
 updates:
   - package-ecosystem: nuget
     directories:
-      - "/**/*"
+      - "/Database/RedisLeaderboard/LBClient"
+      - "/Database/RedisLeaderboard/LBLibrary"
+      - "/Database/RedisLeaderboard/LBService"
     schedule:
       interval: monthly
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 5
     commit-message:
       prefix: "deps"
+    groups:
+      nuget:
+        patterns:
+          - "*"
 
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
       interval: monthly
+    open-pull-requests-limit: 5
     commit-message:
       prefix: "ci"
+    groups:
+      actions:
+        patterns:
+          - "*"
