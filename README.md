@@ -44,11 +44,29 @@ At the time of this writing, all example applications were tested on:
 ## System Requirements
 
 * Supported Operating Systems: `Windows`, `Linux`, `MacOS`
-* [Net Core SDK v8.0](https://dotnet.microsoft.com/download)
+* [.NET SDK 10.0 (LTS)](https://dotnet.microsoft.com/download) — supported to November 2028.
+  The target framework is set once in `Directory.Build.props`; no project file names a version.
 * [VS Code Editor](https://code.visualstudio.com/) is optional but preferred
 * Dual Core CPU Minimum
 * At Least 1GB RAM
 * 1 to 2 GB of Free disk space (if running all apps, less if not)
+
+## Building
+
+Each example is self-contained and has its own `Makefile` (Linux, macOS) and `make.cmd` (Windows).
+To build one, change into its folder and run `dotnet build`. To build every example at once:
+
+```bash
+for p in $(find . -name '*.csproj'); do dotnet build "$p"; done
+```
+
+To check every dependency against published advisories:
+
+```bash
+for p in $(find . -name '*.csproj'); do dotnet list "$p" package --vulnerable --include-transitive; done
+```
+
+Both run in CI on Linux, Windows and macOS, on every push and once a month.
 
 >NOTE: All tools in this repository have been updated with `Makefiles` that
 support installing each application as a [.Net Global Tool](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools).

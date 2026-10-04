@@ -1,0 +1,65 @@
+# Builds every example on the framework named in Directory.Build.props, on all
+# three desktop operating systems, and fails if any dependency has a published
+# advisory against it.
+#
+# The monthly run is the point: .NET 8 reached end of support while nothing was
+# watching. A scheduled build turns the next such date into a red build.
+name: build
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 1 * *"
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ ubuntu-latest, windows-latest, macos-latest ]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Build every example
+        shell: bash
+        run: |
+          fail=0
+          for p in $(find . -name '*.csproj' | sort); do
+            echo "::group::$p"
+            dotnet build "$p" -c Release --nologo || fail=1
+            echo "::endgroup::"
+          done
+          exit $fail
+
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Fail on any package with a published advisory
+        shell: bash
+        run: |
+          fail=0
+          for p in $(find . -name '*.csproj' | sort); do
+            out=$(dotnet list "$p" package --vulnerable --include-transitive 2>&1)
+            if echo "$out" | grep -q "has the following vulnerable packages"; then
+              echo "::error file=$p::vulnerable package(s)"
+              echo "$out"
+              fail=1
+            fi
+          done
+          exit $fail
