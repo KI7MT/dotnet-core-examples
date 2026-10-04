@@ -1,4 +1,4 @@
-﻿using ServiceStack.Redis;
+using StackExchange.Redis;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +14,9 @@ namespace LBLibrary
         {
             RedisUtils redisUtils = new RedisUtils(host, port, password);
 
-            using (IRedisNativeClient client = redisUtils.GetNativeClient())
+            // The connection is shared and long-lived, so nothing is disposed
+            // per read. IDatabase is cheap to obtain and safe to reuse.
+            var db = redisUtils.GetDatabase();
             {
                 var counter = 1;
                 if (count < 1)
@@ -28,13 +30,13 @@ namespace LBLibrary
                         Common.DashLine();
 
                         var timer1 = System.Diagnostics.Stopwatch.StartNew();
-                        IDictionary<string, double> dic1 = redisUtils.GetClient().GetAllWithScoresFromSortedSet("leaderboard");
+                        SortedSetEntry[] dic1 = db.SortedSetRangeByRankWithScores("leaderboard");
 
                         // Iterate through the Dictionary and Print Key, Value Pair
-                        foreach (KeyValuePair<string, double> c in dic1.OrderByDescending(key => key.Value).Take(10))
+                        foreach (SortedSetEntry c in dic1.OrderByDescending(key => key.Score).Take(10))
                         {
-                            var val1 = Convert.ToString(c.Key);
-                            var val2 = Convert.ToString(c.Value);
+                            var val1 = Convert.ToString(c.Element);
+                            var val2 = Convert.ToString(c.Score);
                             Console.WriteLine($" {Convert.ToString(counter).PadRight(3)} {val1.PadRight(10)} {val2}");
                             counter++;
                         }
@@ -52,11 +54,11 @@ namespace LBLibrary
                     Console.WriteLine($"Leaderboard - {DateTime.Now}");
                     Common.DashLine();
                     var timer1 = System.Diagnostics.Stopwatch.StartNew();
-                    IDictionary<string, double> dic1 = redisUtils.GetClient().GetAllWithScoresFromSortedSet("leaderboard");
-                    foreach (KeyValuePair<string, double> c in dic1.OrderByDescending(key => key.Value).Take(10))
+                    SortedSetEntry[] dic1 = db.SortedSetRangeByRankWithScores("leaderboard");
+                    foreach (SortedSetEntry c in dic1.OrderByDescending(key => key.Score).Take(10))
                     {
-                        var val1 = Convert.ToString(c.Key);
-                        var val2 = Convert.ToString(c.Value);
+                        var val1 = Convert.ToString(c.Element);
+                        var val2 = Convert.ToString(c.Score);
                         Console.WriteLine($" {Convert.ToString(counter).PadRight(3)} {val1.PadRight(10)} {val2}");
                         counter++;
                     }
@@ -65,7 +67,7 @@ namespace LBLibrary
 
                 } // end If - While - Else Loop
 
-            } // end using IRedisNativeClient
+            } // end leaderboard read
 
         } // end GetLeaderScore
 

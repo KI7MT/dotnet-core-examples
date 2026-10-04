@@ -1,10 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Configuration;
 using System.IO;
 using System.Threading;
-using ServiceStack.Redis;
+using System.Threading.Tasks;
+using StackExchange.Redis;
 
 namespace LBLibrary
 {
@@ -34,13 +35,12 @@ namespace LBLibrary
         {
             RedisUtils redisUtils = new RedisUtils(host, port, password);
 
-            using (IRedisClient client = redisUtils.GetClient())
-            {
-                Console.WriteLine($"Flushing Database");
-                Common.DashLine();
-                client.FlushDb();
-                Console.WriteLine($"Finished");
-            }
+            // Flushing is a server-wide command, so it goes through IServer
+            // rather than IDatabase. AllowAdmin is set on the connection.
+            Console.WriteLine($"Flushing Database");
+            Common.DashLine();
+            redisUtils.GetServer().FlushDatabase();
+            Console.WriteLine($"Finished");
         }
 
         #endregion
@@ -58,7 +58,11 @@ namespace LBLibrary
             RedisUtils redisUtils = new RedisUtils(host, port, password);
 
             // Use Pipeline to insert records into Redis
-            using (var pipeline = redisUtils.GetClient().CreatePipeline())
+            // IBatch is StackExchange.Redis' pipeline: commands are queued,
+            // sent as a single unit, then awaited together.
+            var db = redisUtils.GetDatabase();
+            var batch = db.CreateBatch();
+            var pending = new List<Task>();
             {
                 var timer1 = System.Diagnostics.Stopwatch.StartNew();
                 int d = 1;
@@ -77,10 +81,11 @@ namespace LBLibrary
                 {
                     value = timer1.ElapsedTicks.ToString();
                     Console.Write($"\r* Adding Keys .......: [ {d.ToString("N0")} ] ");
-                    pipeline.QueueCommand(r => r.AddItemToSortedSet("leaderboard", item, 0));
+                    pending.Add(batch.SortedSetAddAsync("leaderboard", item, 0));
                     d++;
                 }
-                pipeline.Flush();
+                batch.Execute();
+                Task.WaitAll(pending.ToArray());
 
                 timer1.Stop();
                 var elapsedMs = timer1.ElapsedMilliseconds;
@@ -101,9 +106,10 @@ namespace LBLibrary
         {
             RedisUtils redisUtils = new RedisUtils(host, port, password);
 
-            using (IRedisClient client = redisUtils.GetClient())
             {
-                using (var pipeline = redisUtils.GetClient().CreatePipeline())
+                var db = redisUtils.GetDatabase();
+                var batch = db.CreateBatch();
+                var pending = new List<Task>();
                 {
                     // proces variables
                     var timer1 = System.Diagnostics.Stopwatch.StartNew();
@@ -128,16 +134,17 @@ namespace LBLibrary
                         value = timer1.ElapsedTicks.ToString();
                         t2 = value.Substring(value.Length - 3); // 3 gets the last three digits ot ET in miliseconds
                         Console.Write($"\r* Updating Keys ....: [ {d.ToString("N0")} ] ");
-                        pipeline.QueueCommand(r => r.IncrementItemInSortedSet("leaderboard", item, Convert.ToDouble(t2)));
+                        pending.Add(batch.SortedSetIncrementAsync("leaderboard", item, Convert.ToDouble(t2)));
                         d++;
                     }
-                    pipeline.Flush(); // push the increments to Redis
+                    batch.Execute();                 // push the increments to Redis
+                    Task.WaitAll(pending.ToArray()); // wait for the batch to complete
                     timer1.Stop();    // stop the update timer
                     var elapsedMs = timer1.ElapsedMilliseconds;
                     Console.WriteLine($"\n* Pushed Keys ......: [ {c.ToString("N0")} ]");
                     Console.WriteLine($"* Update Time ......: [ {Math.Round(timer2.Elapsed.TotalSeconds, 5)} ]");
-                } // END - Using Pipeline
-            } // END - IRedisClient
+                } // END - Batch
+            } // END - IncrementSortedSet body
         } // END - IncrementSortedSet
 
         #endregion
