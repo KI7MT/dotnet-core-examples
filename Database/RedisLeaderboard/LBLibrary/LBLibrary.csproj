@@ -19,8 +19,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ServiceStack.Redis.Core" Version="5.4.0" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
+    <PackageReference Include="ServiceStack.Redis.Core" Version="8.10.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="10.0.12" />
   </ItemGroup>
 
   <!-- New .Net Core v2.2 License Requirement: fixes warning NU5125 -->
